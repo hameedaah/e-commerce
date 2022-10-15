@@ -1,0 +1,509 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ 
+body{
+    max-width: 100%;
+    /* position: relative; */
+} 
+
+/* Changing Navbar arrow down icon */
+.dropdown-toggle::after {
+    display: none;
+}
+
+@media screen and (max-width:768px) {
+    .navbar-nav {
+        margin: 0 !important;
+    }
+}
+
+/* Got to top icon */
+
+
+
+/* Beginning of menu bar */
+.menu-container{
+    background: black;
+    color: grey;
+    min-height: 50px;
+    width: 100%;
+    /* border: 2px solid red; */
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.menu-bar{
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 90vw;
+}
+
+
+.menu-items{
+    list-style-type: none;
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: center;
+     margin: 10px 0;
+    align-items: center;
+}
+
+.menu-item{
+    padding:0 1rem;
+}
+
+/* End of menu bar */
+
+/* Beginning of small Testimonial */
+
+.testimonial-container{
+    margin-top: 20vh;
+    width: 100%;
+    text-align: center;
+}
+
+.testimonial-container .text h2{
+    font-size: 40px;
+}
+
+.testimonial{
+    min-height: 70vh;
+    width: 90vw;
+    margin: 60px auto 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    place-items: center;
+    gap: 3rem 3rem;
+    padding-bottom: 60px;
+}
+
+
+.person-img-container {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    border: 10px solid rgb(230, 236, 238);
+    overflow: hidden;
+}
+
+.person-img-container img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Speech Bubble Beginning */
+ 
+.speechBubble {
+    position: relative;
+    padding: 7px;    
+}
+        
+.bubbleText {
+    position: absolute;
+    left: 60%;
+    top: 0;
+    width: 200px;
+    height: 110px;
+    transform: translateX(-50%);
+    background-color: rgb(230, 236, 238);
+    padding: 0px 15px;
+    border-radius: 15px;
+    visibility: hidden;
+    transition: opacity 0.5s ease-in;
+    text-align: center;
+    word-break: break-word;
+    white-space: pre-wrap;
+    font-family: cursive;
+    text-transform: capitalize;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+    border: 4px solid black;
+    box-shadow: 10px 10px 14px -4px rgba(0, 0, 0, 0.75);
+} 
+
+ .bubbleText::before {
+    content: "";
+    position: absolute;
+    left: 25%;
+    top: 100%;
+    transform: translateX(-50%);
+    border-left: 20px solid black;
+    border-top: 20px solid black;
+    border-right: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+}
+
+ .bubbleText::after {
+     content: "";
+     position: absolute;
+     left: 26%;
+     top: 95%;
+     transform: translateX(-50%);
+     border-left: 19px solid rgb(230, 236, 238);
+     border-top: 19px solid rgb(230, 236, 238);
+     border-right: 19px solid transparent;
+     border-bottom: 19px solid transparent;
+   
+ }
+        
+.speechBubble:hover .bubbleText {
+    top: -120px;
+    visibility: visible;
+   
+} 
+
+/* Speech Bubble Ending */
+
+ .person-img-container:hover{
+    cursor: pointer;
+} 
+
+/* End of Testimonial */
+
+
+/* Beginning of main testimonial page */
+
+
+
+/* End of main testimonial page */
+
+
+/*Beginning of Main Image */
+.home-image{
+    width: 100%;
+    height: 100vh;
+    /* background: cover url('../images/second.jpg') fixed; */
+    background-image: url('../images/second.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-image h2{
+    font-size: 2rem;
+}
+/*End of Main Image */
+
+
+
+
+/* Footer Beginning */
+
+
+footer{
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: auto;
+    width: 100%;
+    background: #111;
+    color: #999999;
+}
+
+.footer-main{
+    width: 90vw;
+    margin: 0 auto;
+    /* border: 1px white solid; */
+    /* padding-bottom: 150px; */
+}
+
+.footer-bottom {
+    margin-top: 150px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 150px;
+    background: #000;
+    color: #999999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    border-top: 2px solid #444;
+}
+
+.footer-items{
+    text-transform: capitalize;
+    padding-bottom: 2rem;
+}
+
+
+.footer-items li{
+    list-style-type: none;
+}
+
+@media screen and (max-width: 992px){
+    .footer-bottom {
+            margin-top: 0;
+        }
+}
+
+
+@media screen and (min-width:768px) {
+    .footer-main {
+        width: 80vw;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footer-items{
+        flex: 0 0 33.333%;
+    }
+
+}
+
+@media screen and (min-width:992px){
+        .footer-items {
+            flex: 0 0 25%;
+        } 
+    
+}
+
+
+/* footer bottom */
+.socials {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0;
+}
+
+.socials li{
+    list-style-type: none;
+    border: 1px solid gray;
+    padding: 0.5rem;
+    margin: 0 0.25rem;
+}
+
+.icon{
+    color: grey;
+}
+/* footer bottom ending */
+
+
+/* footer ending */
+
+/* scroll up icon */
+a.scroll-up{
+    height: 50px;
+    width: 50px;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background: rgb(61, 61, 236);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+/* scroll up icon end */
+
+.list-item {
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #000;
+}
+
+.list-item:hover {
+    color: gray;
+}
+
+/* Album component in footer */
+
+.album{
+    width: 85vw;
+    margin: 0 auto;
+    padding: 3rem 0;
+    
+
+}
+
+.album .album-title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bolder;
+
+}
+/* end of album component in footer */
+
+
+/* Album component */
+.album-footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+.album-img{
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    margin: 2px;
+}
+
+
+.album-img:hover{
+    cursor: pointer;
+}
+/* End of Album component */
+
+/* Album-Carousel */
+
+.main-album {
+    min-height: 100vh;
+    background: rgb(39, 37, 37);
+}
+
+
+.carousel-container {
+    height: 75vh;
+    display: flex;
+    justify-content: center;
+    background: black;
+}
+
+.full-carousel {
+    height: 92vh;
+    display: flex;
+    justify-content: center;
+    background: black;
+}
+
+
+img.carousel-image {
+    width: 700px;
+    height: 100%;
+
+
+}
+
+.modal-container .navigate {
+    color: white;
+    font-size: 4rem;
+    position: absolute;
+    top: 35%;
+            
+
+}
+
+.modal-container .prev {
+    left: 0;
+}
+
+.modal-container .next {
+    right: 0;
+
+}
+
+.dismiss{
+    position: absolute;
+    top: 30px;
+    right: 20px;
+    font-size: 1.5rem;
+}
+
+.modal-container .dismiss{
+    color: white;
+  
+}
+
+.big-album{
+    background: grey;
+    min-height: 100vh;
+}
+
+.big-album .album-footer{
+    width: 90vw;
+    margin: 0 auto;
+    padding: 2rem 0;
+
+}
+
+
+
+.big-album .dismiss{
+    color: white;
+    font-weight: bold;
+}
+
+.modal-container .hide {
+    display: none;
+}
+
+.main-album p{
+    border: 1px solid white;
+    padding-bottom: 10px;
+}
+
+
+
+ .small-img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+}
+
+.main-album .small-img:hover {
+    cursor: pointer;
+}
+
+.hide-album{
+    display: none;
+}
+
+.album-btns{
+    width: 30%;
+    /* background: blue; */
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 15px 0;
+}
+.album-btns button{
+    display: flex;
+    background: transparent;
+    color: white;
+    padding: 0 5px;
+    font-size: 1.5rem;
+    border: none;
+}
+
+/*End of Album-Carousel */
+
+
+
+.progressbar {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 5px;
+    border-radius: 5px;
+    background: rgb(39, 37, 37);
+}
+
+
+

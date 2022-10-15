@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Beginning of Clothing Items */
+
+.item{
+    height: 80%;
+    border-bottom: 1px solid rgb(228, 223, 223);
+    text-align: center;
+}
+
+.item-img{
+    object-fit: cover;
+    height: 200px;
+    width: 197px;
+    /* width: inherit; */
+}
+
+
+.shop-container{
+    width: 80vw;
+        margin: 0 auto;
+        border: 1px solid blue;
+}
+
+.all-items{
+   
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+  
+    
+}
+
+.item-container{
+    border: 1px solid rgb(228, 223, 223);
+    height: 300px;
+    width: 200px;
+    text-transform: uppercase;
+    color: gray;    
+}
+
+.paginate{
+    display: block;
+}
+
+/* End of Clothing Items */
+
+
