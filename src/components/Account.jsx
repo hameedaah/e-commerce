@@ -1,11 +1,11 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 import './css/account.css'
-import AOS from 'aos'
-import 'aos/dist/aos.css'
-import 'aos/dist/aos.js'
-import Search from './Search'
-import Login2 from './Login2'
-import Register from './Register'
+// import AOS from 'aos'
+// import 'aos/dist/aos.css'
+// import 'aos/dist/aos.js'
+// import Login2 from './Login2'
+// import Register from './Register'
+import Sidebar from './Sidebar'
 
 
 const Account = () => {
@@ -16,9 +16,9 @@ const Account = () => {
   //   }, [])  
   //   })
   return (
-    <div className='sidebar-container'>
+    <div >
 
-<Search />
+<Sidebar />
 {/* <Login2 />
 <Register /> */}
   

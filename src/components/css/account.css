@@ -1,4 +1,15 @@
-.account h1{
+ * {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+ }
+
+ body {
+   font-family: Arial, Helvetica, sans-serif;
+ }
+
+
+/* .account h1{
     color: black;
     position: absolute;
     left: 40%;
@@ -27,45 +38,40 @@
     width: 300px;  
 }
 
-* {
-    box-sizing: border-box;
-  }
+
+   */
   
-  body {
-    font-family: Arial, Helvetica, sans-serif;
-  }
   
   /* Float four columns side by side */
-  .column {
+  /* .column {
     float: left;
     width: 25%;
     padding: 0 10px;
     margin-top: 100px;
-  }
+  } */
   
   /* Remove extra left and right margins, due to padding in columns */
-  .row {margin: 0 -5px;}
-  
+  /* .row {margin: 0 -5px;} */
+   
   /* Clear floats after the columns */
-  .row:after {
+  /* .row:after {
     content: "";
     display: table;
     clear: both;
   }
-  
+   */
   /* Style the counter cards */
+
+     /* this adds the "card" effect */
+  /*
   .card {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     padding: 16px;
     text-align: center;
     background-color: white;
   }
   
-  *{
-    margin: 0px;
-    padding: 0px;
-    border: 0px;
-}
+ 
 
 .form{
     position: absolute;
@@ -121,11 +127,6 @@
   }
 
 
-  *{
-    margin: 0px;
-    padding: 0px;
-    border: 0px;
-}
 
 .loginform{
     position: absolute;
@@ -182,13 +183,98 @@
   .loginform label{
     font-family: 'Times New Roman', Times, serif;
     margin-left: 15%;
-  }
+  } */
 
   /* Responsive columns - one column layout (vertical) on small screens */
-  @media screen and (max-width: 600px) {
+  /* @media screen and (max-width: 600px) {
     .column {
       width: 100%;
       display: block;
       margin-bottom: 20px;
     }
-  }
+  } */
+
+
+    /* Sidebar Component Beginning */
+    .sidebar-container {
+      /* border: 2px solid red; */
+      width: 27vw;
+      margin: 5rem 0 3rem 100px;
+    }
+
+    .search-container{
+      background: pink;
+      /* padding: 20px; */
+    }
+
+    .card{
+      width: 100%;
+      margin: 1.5rem 0;
+      padding: 20px;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    }
+
+    .card .title{
+        font-size: 24px;
+        font-weight: 900;
+        width: 75%;
+        text-transform: capitalize;
+        padding: 20px 0;
+        margin: 0;
+    }
+
+    .product-list{
+      /* border: 1px solid purple; */
+      width: 75%;
+      padding: 0;
+      margin-bottom: 0;
+    }
+
+    .product-item{
+      /* border: 1px solid green; */
+      display: flex;
+      color: black;
+      justify-content: space-between;
+      margin-bottom: 0.75rem;
+      /* background: palegreen; */
+    }
+
+   .product-item .product-text p{
+      margin: 0;
+      text-transform: capitalize;
+      /* background: yellow; */
+   }
+
+   .product-item .product-name{
+    font-weight: bold;
+   }
+   .product-item img{
+    width: 30px;
+    height: 30%;
+    object-fit: cover;
+   }
+
+   .product-text .price{
+    color: grey;
+   }
+
+   .card .calender-month {
+      /* border: 1px solid blue; */
+      font-weight: bold;
+      display: flex;
+      align-items: center;
+      /* padding-left: 5px; */
+      margin-bottom: 0;
+   }
+
+   .card .cal-icon,.card .folder-icon{
+    margin-right: 7px;
+   }
+
+   .card.category-list{
+    font-weight: bold;
+   }
+   .card.category-list li{
+    list-style-type: none;
+    margin-bottom: 0.5rem;
+   }
