@@ -1,10 +1,131 @@
-*{
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
+.account h1{
+    color: black;
+    position: absolute;
+    left: 40%;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;
+    top: 10px;
+}
+.tablecss{
+    position: absolute;
+    box-shadow: wheat;
+    border: 1px solid wheat;
+    background-color: white;
+    border-radius: 7px;
+    margin-top: 100px;
+    left: 115px;
+    padding: 100px;
+}
+.table{
+    position: absolute;
+    box-shadow: wheat;
+    border: 1px solid wheat;
+    background-color: white;
+    border-radius: 7px;
+    margin-top: 300px;
+    left: 115px;
+    width: 300px;  
 }
 
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  /* Float four columns side by side */
+  .column {
+    float: left;
+    width: 25%;
+    padding: 0 10px;
+    margin-top: 100px;
+  }
+  
+  /* Remove extra left and right margins, due to padding in columns */
+  .row {margin: 0 -5px;}
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Style the counter cards */
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
+    padding: 16px;
+    text-align: center;
+    background-color: white;
+  }
+  
+  *{
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+}
 
+.form{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    top: 35%;
+    left: 35%;
+    width: 350px;
+    transform: translate(-50%, -50%);
+    height: auto;
+    border: 1px solid #aaa;
+    background: white;
+    color: black;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+.form small[type='submit']{
+    background: linear-gradient(to bottom, rgba(67, 8, 106, 0.8), rgba(45,3, 86, 0.7));
+    border: 3px solid #fff;
+    color: white;
+    border-radius: 15px;
+   
+}
+
+.form input{
+    width: calc(100% - 50px);
+    border: 2px solid #aaa;
+    margin-bottom: 20px;
+    height: 30px;
+    margin-bottom: 20px;
+    margin-top: 15px;
+
+}
+.form hr{
+    border: 1px solid #aaa;
+    width:90%;
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+  .form a{
+      text-decoration: none;
+      color: rgb(17, 182, 154)
+  }
+  .form button{
+    margin-left: 10%;
+  }
+
+  .form label{
+    font-family: 'Times New Roman', Times, serif;
+    margin-left: 15%;
+  }
+
+
+  *{
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+}
 
 .loginform{
     position: absolute;
@@ -12,35 +133,17 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    top: 25%;
-    left: 70%;
-    width: 300px;
+    top: 35%;
+    left: 65%;
+    width: 350px;
     transform: translate(-50%, -50%);
-    height: 50%;
+    height: auto;
     border: 1px solid #aaa;
-    background: linear-gradient(to bottom, rgba(149, 192, 136, 0.8), rgba(14, 10, 19, 0.7));
+    background: white;
+    color: black;
     padding-bottom: 20px;
     padding-top: 20px;
-    color: beige;
-    font-family: 'Times New Roman', Times, serif;
 }
-.loginform label{
-    color: wheat;
-    margin-left: 10%;
-}
-.loginform p{
-    font-family:'Times New Roman', Times, serif;
-    color:tan;
-}
-.loginform a:hover{
-    color:tomato}
-
-.loginform h3{
-    font-family: 'Times New Roman', Times, serif;
-    color: white;
-    margin-left: 10%;
-}
-
 .loginform small[type='submit']{
     background: linear-gradient(to bottom, rgba(67, 8, 106, 0.8), rgba(45,3, 86, 0.7));
     border: 3px solid #fff;
@@ -56,7 +159,7 @@
     height: 30px;
     margin-bottom: 20px;
     margin-top: 15px;
-    margin-left: 10%;
+    
 
 }
 .loginform hr{
@@ -67,83 +170,25 @@
 }
   .loginform a{
       text-decoration: none;
-      color: rgb(17, 182, 154);
-      margin-left: -5%;
-      font-family: 'Times New Roman', Times, serif;
+      color: rgb(17, 182, 154)
+  }
+  .loginform button{
+    margin-left: 15%;
+  }
+  .loginform p{
+    font-family: 'Times New Roman', Times, serif;
   }
 
-  .loginform span{
-    color: rgb(17, 182, 154);
+  .loginform label{
     font-family: 'Times New Roman', Times, serif;
     margin-left: 15%;
-
   }
 
-  .form{
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    top: 25%;
-    left: 40%;
-    width: 300px;
-    transform: translate(-50%, -50%);
-    height: 50%;
-    border: 1px solid #aaa;
-    background: linear-gradient(to bottom, rgba(149, 192, 136, 0.8), rgba(14, 10, 19, 0.7));
-    padding-bottom: 20px;
-    padding-top: 20px;
-}
-.form h3{
-    font-family: 'Times New Roman', Times, serif;
-    color: beige;
-    margin-left: 10%;
-}
-
-.form small[type='submit']{
-    background: linear-gradient(to bottom, rgba(67, 8, 106, 0.8), rgba(45,3, 86, 0.7));
-    border: 3px solid #fff;
-    color: white;
-    border-radius: 15px;
-    left: 60%;
-   
-}
-
-.form input{
-    width: calc(100% - 50px);
-    border: 2px solid #aaa;
-    margin-bottom: 20px;
-    height: 30px;
-    margin-bottom: 20px;
-    margin-top: 15px;
-    margin-left: 10%;
-    font-family: 'Times New Roman', Times, serif;
-}
-.form label{
-    color: wheat;
-    margin-left: 10%;
-    font-family: 'Times New Roman', Times, serif;
-}
-.form hr{
-    border: 1px solid #aaa;
-    width:90%;
-    margin-top: 50px;
-    margin-bottom: 15px;
-}
-.form small{
-    margin-left: 10%;
-}
-  .form a{
-      text-decoration: none;
-      color: rgb(17, 182, 154);
-      font-family: 'Times New Roman', Times, serif;
+  /* Responsive columns - one column layout (vertical) on small screens */
+  @media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+      display: block;
+      margin-bottom: 20px;
+    }
   }
-
-  
-
- 
-
-
-
- 
