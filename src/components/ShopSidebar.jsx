@@ -27,12 +27,10 @@ const Sidebar = () => {
   return (
     <section className='sidebar-container'>
       {/* Search Component */}
-    <nav className="search-container card" data-aos="fade-right" data-aos-easing="ease-out-cubic" data-aos-duration="500">
-    <form className="d-flex" role="search">
-      <input className="form-control me-2" type="search" placeholder="Search..." aria-label="Search" />
-      <button className="btn btn-outline-warning" type="submit">Search</button> 
-    </form>
-    </nav>
+    <div className='price-filter'>
+      <label htmlFor="customRange3" className="form-label">Example range</label>
+<input type="range" className="form-range" min="0" id="customRange3"/>
+</div>
   
      
 {/* Top Rated Products */}   
@@ -66,29 +64,14 @@ const Sidebar = () => {
   </section>
 
 
-{/* Archives */}
-  <section  className="card" data-aos="fade-right" data-aos-easing="ease-out-cubic" data-aos-duration="500">
-     <h2 className='title'>Archives</h2>
-    <p className='calender-month'><FaCalendarAlt className='cal-icon'/>November 2021</p>
-
+   <section className="card products-container" data-aos="fade-right" data-aos-easing="ease-out-cubic" data-aos-duration="500">
+    <h2 className='title'>Filter by</h2>
+    <ul className='product-list'>
+      <li>Black</li>
+      <li>Blue</li>
+      <li>Green</li>
+    </ul>
   </section>
-
-  {/* Categories Component */}
-  <ul className="card category-list" data-aos="fade-right" data-aos-easing="ease-out-cubic" data-aos-duration="500">  
-      <h2 className='title'>Archives</h2>
-      {categories.map((category, idx)=>{
-        return(
-        <li key={idx}>
-          <AiFillFolder className='folder-icon'/>
-          {category}
-        </li>
-        )
-      })
-
-      }
-  </ul>
-
-
   </section>
 
 

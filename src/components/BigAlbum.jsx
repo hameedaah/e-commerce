@@ -16,7 +16,6 @@ const BigAlbum = () => {
             currIndex: index}}>
             <img src={item.image} alt='item' className='album-img' />
             </Link>
-            {/* <img src={item.image} alt='item' className='small-img' /> */}
           </div>
         )
       })}

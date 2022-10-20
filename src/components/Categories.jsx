@@ -6,17 +6,19 @@ import Shop from './Shop'
 const Categories = () => {
   const params = useParams();
   const category = params.categoryName
+  
 
-  console.log(params)
 
-
-     let items = pictureData.filter(item=>{
-        return item.category === category
+     let filteredCategory = pictureData.filter(item=>{
+        return item.category === category 
     })
+
+    
+    
     
   return (
     <div>
-        <Shop info={items} />
+        <Shop info={filteredCategory} />
     </div>
   )
 }

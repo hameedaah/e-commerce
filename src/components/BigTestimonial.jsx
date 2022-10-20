@@ -1,18 +1,22 @@
 import React from 'react'
 import Sidebar from './Sidebar'
 import { useLocation } from 'react-router-dom'
+import './css/style.css'
 
 const BigTestimonial = () => {
     const location = useLocation();
     console.log(location)
-    const {id, image, peopleDate} = location.state;
+    const {id, image, fullTestimonial} = location.state;
   return (
-    <div>
-    <Sidebar /> 
+    <div className='big-testimonial-container'>
+    
     <section className='main-testimonial'>
-    <p>{`Testimonial ${id}`}</p>
-    <img src={image} alt='testimonial-image'/>
+    <h2>{`Testimonial ${id}`}</h2>
+    <img src={image} alt='testimonial'/>
+    <p>{fullTestimonial}</p>
     </section>
+  
+    <Sidebar className='side'/> 
 
     </div>
   )

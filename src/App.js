@@ -8,14 +8,17 @@ import Home from './components/Home'
 import BigTestimonial from './components/BigTestimonial'
 import Shop from './components/Shop'
 import Categories from './components/Categories'
+import SubCategories from './components/SubCategories'
 import Product from './components/Product'
 import AlbumCarousel from './components/AlbumCarousel'
 import BigAlbum from './components/BigAlbum'
 import Blog from './components/Blog'
 import Account from './components/Account'
+import Contact from './components/Contact'
 import '../src/components/css/style.css'
 import { IoIosArrowUp } from "react-icons/io";
 import pictureData from './components/js/pictureData'
+
 
 
 
@@ -37,11 +40,13 @@ function App() {
         <Route path='/shop' element={<Shop info = {pictureData} />}/>
         <Route path='/categories' element={<Categories />}/>
         <Route path='/categories/:categoryName' element={<Categories />}/>
+        <Route path='/categories/:categoryName/:subCategory' element={<SubCategories />}/>
         <Route path='/blog' element={<Blog />}/>
         <Route path='/product' element={<Product />}/>
         <Route path='/home/main-testimonial' element={<BigTestimonial />}/>
         <Route path='/albumcarousel' element={<AlbumCarousel />}/>
         <Route path='/albumcarousel/big-album' element={<BigAlbum />}/>
+        <Route path='/contact' element={<Contact />}/>
         <Route path='/account' element={<Account />}/>
         {/* <Route path="*" element={<Error />}/> */}
         

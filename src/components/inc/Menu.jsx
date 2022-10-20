@@ -4,6 +4,7 @@ import { BsEnvelopeFill, BsFillPersonFill } from "react-icons/bs";
 import { HiLocationMarker } from "react-icons/hi";
 import { AiFillPhone } from "react-icons/ai";
 import { FaShoppingCart } from "react-icons/fa";
+import '../css/style.css'
 
 
 
@@ -46,7 +47,7 @@ const Menu = () => {
 
         </ul>
         
-        <Link to="/account">
+        <Link to="/account" className='account-link'>
         <section className='sign'>
             <BsFillPersonFill />
             Login/Register
