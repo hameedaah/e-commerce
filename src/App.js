@@ -13,6 +13,7 @@ import Product from './components/Product'
 import AlbumCarousel from './components/AlbumCarousel'
 import BigAlbum from './components/BigAlbum'
 import Blog from './components/Blog'
+import Model from './components/Model'
 import Account from './components/Account'
 import Contact from './components/Contact'
 import '../src/components/css/style.css'
@@ -42,6 +43,7 @@ function App() {
         <Route path='/categories/:categoryName' element={<Categories />}/>
         <Route path='/categories/:categoryName/:subCategory' element={<SubCategories />}/>
         <Route path='/blog' element={<Blog />}/>
+        < Route path = '/blog/model' element = {<Model />}/>
         <Route path='/product' element={<Product />}/>
         <Route path='/home/main-testimonial' element={<BigTestimonial />}/>
         <Route path='/albumcarousel' element={<AlbumCarousel />}/>

@@ -618,3 +618,120 @@ a.scroll-up {
     margin-bottom: 1rem;
 }
 /* Contact Page Ending */
+
+
+
+
+
+/* Blog styling */
+
+
+
+.box{
+    background-color: white;
+    overflow: hidden;
+    height: 1000px;
+    max-height: 100vh;
+}
+
+.grids{
+    max-width: 70%;
+    margin: auto;
+}
+
+
+.left-side {
+    position: relative;
+    float: left;
+    width: 50%;
+    height: 100%;
+}
+
+.left-side img{
+    width: 100%;
+    height: 100%;
+}
+
+
+.right-side {
+    position: relative;
+    float: right;
+}
+
+.right-side p{
+    float: left;
+    width: 300px;
+    text-align: left;
+}
+
+
+
+.large-image{
+    background-image: url(../images/eleven.jpg);
+    background-color: azure;
+    height: 500px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
+.cards-wrapper{
+    display: flex;
+}
+
+.card{
+    margin: 0.5rem;
+    width: calc(100%/3);
+}
+
+.image-wrapper{
+    height: 22vw;
+    margin: 0 auto;
+}
+
+.image-wrapper img{
+    max-height: 50%;
+    max-width: 50%;
+}
+
+.image{
+
+      
+
+    float: left;
+    margin-right: 10px;
+    margin-bottom: 5px;
+    border: solid black 1px;
+    padding: 2px;
+}
+
+
+.blog-container{
+    display: flex;
+    width: 85vw;
+    margin: 0 auto;
+}
+
+.main-blog{
+    margin-left: 2rem;
+}
+
+.btn{
+    background-color: black;
+  color: white;
+  border: 2px solid #f14e25
+}
+
+.readimage{
+    float: left;
+    margin-right: 10px;
+    margin-bottom: 5px;
+    padding: 2px;
+}
+
+/* blog styling end */
+
+
+
