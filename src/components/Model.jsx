@@ -2,8 +2,7 @@ import React from 'react'
 import blogData from './js/blogData' 
 import { useLocation } from 'react-router-dom'
 import './css/style.css'
-import Sidebar from './Sidebar'
-import Footer from './inc/Footer'
+
 
 const Model = () => {
     const location = useLocation()
@@ -13,19 +12,12 @@ const Model = () => {
         return item.id === id
     })
 
-    const {title, image, mainText} = model[0]
+    const {image, mainText} = model[0]
     console.log(model)
   return (
-    
-
-    <div>
-        <div className='blog-container'>
-         {/* <Sidebar/> */}
-       
-
-
-       <div className='mainblog-container'>
-          <img src={image} className='readimage' style={{width: '500px', height:'500px'}} alt="" />
+        <div className='model-page'>
+       <div className='model-content'>
+          <img src={image} className='readimage' alt="" />
         </div>
 
         <div>
@@ -33,11 +25,7 @@ const Model = () => {
           {mainText} 
          </p>
          </div>
-       </div> 
-       {/* <Footer/> */}
-    </div>
-
-      
+       </div>      
   )
 }
 

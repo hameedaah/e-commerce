@@ -3,11 +3,6 @@ import { Link } from 'react-router-dom'
 import Pagination from './Pagination'
 import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap/dist/js/bootstrap.bundle'
-
-
-
-
-
 import './css/style.css'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
@@ -51,9 +46,9 @@ const Blog = () => {
     
   return (
     <div>
-    <div className='large-image'></div>
+    <div className='blog-large-image'></div>
     <div className='blog-container'>
-      <Sidebar />
+      
     <section className='main-blog'>
       {currentPosts.map((item)=>{
         const {id, title, image, smallText} = item
@@ -72,7 +67,7 @@ const Blog = () => {
                    state={{
                     id: id,
                    }}>
-                    <button className='btn'>READ MORE</button>
+                    <button className='blog-btn'>Read More</button>
                    </Link>
                  </div>
                </p>
@@ -82,11 +77,10 @@ const Blog = () => {
            )
       })}
     </section>
-    
+    <Sidebar />
     
 </div>
 <Pagination className='paginate' postsPerPage={postsPerPage} totalPosts={blogData.length} paginate={paginate} currentPage={currentPage}/>
-<Footer/>
 </div>
       )
 }
