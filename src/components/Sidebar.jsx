@@ -7,6 +7,7 @@ import AOS from 'aos'
 import 'aos/dist/aos.css'
 import 'aos/dist/aos.js'
 import pictureData from './js/pictureData'
+import Search from './Search';
 
 const categories = [...new Set(pictureData.map(picture=>
   picture.category
@@ -27,12 +28,7 @@ const Sidebar = () => {
   return (
     <section className='sidebar-container'>
       {/* Search Component */}
-    <nav className="search-container card" data-aos="fade-right" data-aos-easing="ease-out-cubic" data-aos-duration="500">
-    <form className="d-flex" role="search">
-      <input className="form-control me-2" type="search" placeholder="Search..." aria-label="Search" />
-      <button className="btn btn-outline-warning" type="submit">Search</button> 
-    </form>
-    </nav>
+      <Search />
   
      
 {/* Top Rated Products */}   

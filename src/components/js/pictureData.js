@@ -360,7 +360,7 @@ const pictureData = [
     },
       { 
         id : 35,
-        productName: `Nike Sneakers`,
+        productName: `Brown Nike Sneakers`,
         category: 'Shoes',
         subCategory : 'Sneakers',
         imageurl: 'https://images.unsplash.com/photo-1549298916-b41d501d3772?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDF8fHdvbWVuJTIwc2hvZXN8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60',
@@ -381,7 +381,7 @@ const pictureData = [
     { 
         id : 37,
         productName: 'premium Loafers',
-         category: 'Shoes',
+        category: 'Shoes',
         subCategory : 'Loafers',
         imageurl: 'https://images.unsplash.com/photo-1559334417-01b38aec66bd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTF8fHdvbWVuJTIwc2hvZXN8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60',
         price : 4000,
@@ -565,233 +565,281 @@ const pictureData = [
 
 
 
-//     { 
-//         id : 46,
-//         productName: 'silver gold chronograph watch',
-//          category: 'Accessories',
-//         subCategory : 'wristwatch',
-//         imageurl: 'https://images.unsplash.com/photo-1587925358603-c2eea5305bbc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8d3Jpc3R3YXRjaHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60',
-//         price : 6000,
-//         description : 'loremİpsum loremhgsvgjxbhvgqx'
+    { 
+        id : 55,
+        productName: 'silver and black chronograph watch',
+         category: 'Accessories',
+        // subCategory : 'wristwatch',
+        imageurl: 'https://images.unsplash.com/photo-1619946928632-abefa12506e2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8d3Jpc3R3YXRjaHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60',
+        price : 6000,
+        description : 'loremİpsum loremhgsvgjxbhvgqx'
 
-//     },
+    },
 
-//     { 
-//         id : 47,
-//         productName: 'Rotary Quartz Wristwatch',
-//          category: 'Accessories',
-//         subCategory : 'wristwatch',
-//         imageurl: 'https://th.bing.com/th/id/OIP.OzQKIi0kYj-u1kvKH0AH3gHaHa?w=181&h=180&c=7&r=0&o=5&dpr=1.5&pid=1.7',
-//         price : 15000,
-//         description : 'loremİpsum loremhgsvgjxbhvgqx'
+    { 
+        id : 56,
+        productName: 'Rotary Quartz Wristwatch',
+         category: 'Accessories',
+        // subCategory : 'wristwatch',
+        imageurl: 'https://th.bing.com/th/id/OIP.OzQKIi0kYj-u1kvKH0AH3gHaHa?w=181&h=180&c=7&r=0&o=5&dpr=1.5&pid=1.7',
+        price : 15000,
+        description : 'loremİpsum loremhgsvgjxbhvgqx'
 
-//     },
+    },
 
-//     { 
-//         id : 48,
-//         productName: 'Movado Automatic Wristwatch',
-//          category: 'Accessories',
-//         subCategory : 'wristwatch',
-//         imageurl: 'https://th.bing.com/th/id/OIP.dXk_FF2V1MZ_ceh0CKeL4gHaHa?w=180&h=180&c=7&r=0&o=5&dpr=1.5&pid=1.7',
-//         price : 17000,
-//         description : 'loremİpsum loremhgsvgjxbhvgqx'
+    { 
+        id : 57,
+        productName: 'Movado Automatic Wristwatch',
+         category: 'Accessories',
+        // subCategory : 'wristwatch',
+        imageurl: 'https://th.bing.com/th/id/OIP.dXk_FF2V1MZ_ceh0CKeL4gHaHa?w=180&h=180&c=7&r=0&o=5&dpr=1.5&pid=1.7',
+        price : 17000,
+        description : 'loremİpsum loremhgsvgjxbhvgqx'
 
-//     },
+    },
 
 
-//      { 
-//         id : 49,
-//         productName: 'Antique ladies Rolex Wristwatch',
-//           category: 'Accessories',
-//         subCategory : 'wristwatch',
-//         imageurl: 'https://th.bing.com/th/id/OIP.IcOcOIvPTXd0gNmA3xDNVgHaFj?w=265&h=199&c=7&r=0&o=5&dpr=1.5&pid=1.7',
-//         price : 10000,
-//         description : 'loremİpsum loremhgsvgjxbhvgqx'
+     { 
+        id : 58,
+        productName: 'Silver chain necklace with blue gemstone pendant',
+          category: 'Accessories',
+        // subCategory : 'necklace',
+        imageurl: 'https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8bmVja2xhY2VzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60',
+        price : 10000,
+        description : 'loremİpsum loremhgsvgjxbhvgqx'
 
-//     },
+    },
     
-    
-//     { 
-//         id : 50,
-//         productName: 'women vintage butterfly necklace',
-//         category: 'Accessories',
-//         subCategory : 'necklace',
-//         imageurl: 'https://th.bing.com/th/id/OIP.1xib45N_tYNIISka7CUE5QHaHa?w=198&h=198&c=7&r=0&o=5&dpr=1.5&pid=1.7',
-//         price : 10000,
-//         description : 'loremİpsum loremhgsvgjxbhvgqx'
-//     },
+    { 
+        id : 59,
+        productName: 'women vintage butterfly necklace',
+        category: 'Accessories',
+        subCategory : 'Necklace',
+        imageurl: 'https://th.bing.com/th/id/OIP.1xib45N_tYNIISka7CUE5QHaHa?w=198&h=198&c=7&r=0&o=5&dpr=1.5&pid=1.7',
+        price : 10000,
+        description : 'loremİpsum loremhgsvgjxbhvgqx'
+    },
         
     
-//     { 
-//         id : 51,
-//         productName: 'gold silver heart pendant',
-//         category: 'Accessories',
-//         subCategory : 'necklace',
-//         imageurl: 'https://images.unsplash.com/photo-1602752250055-5ebb552fc3ae?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTJ8fGd1Y2NpJTIwaW50ZXJsb2NraW5nJTIwcGVuZGFudHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60',
-//         price : 10000,
-//         description : 'loremİpsum loremhgsvgjxbhvgqx'
-//     },
+    { 
+        id : 60,
+        productName: 'gold silver heart pendant',
+        category: 'Accessories',
+        subCategory : 'Necklace',
+        imageurl: 'https://images.unsplash.com/photo-1602752250055-5ebb552fc3ae?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTJ8fGd1Y2NpJTIwaW50ZXJsb2NraW5nJTIwcGVuZGFudHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60',
+        price : 10000,
+        description : 'loremİpsum loremhgsvgjxbhvgqx'
+    },
+
+     { 
+        id : 61,
+        productName: 'Large Gold cross necklace',
+        category: 'Accessories',
+        subCategory : 'Necklace',
+        imageurl: 'https://th.bing.com/th/id/OIP.k8J7XaYFcOeL1Lh8_TmWhgHaFj?w=283&h=212&c=7&r=0&o=5&dpr=1.5&pid=1.7',
+        price : 10000,
+        description : 'loremİpsum loremhgsvgjxbhvgqx'
+    },
         
     
-//     { 
-//         id : 52,
-//         productName: 'Amesthyt Pendant necklace',
-//         category: 'Accessories',
-//         subCategory : 'necklace',
-//         imageurl: 'https://th.bing.com/th/id/OIP.ASzlgQ9_zFxVJqNXt1YAEwHaJk?w=153&h=198&c=7&r=0&o=5&dpr=1.5&pid=1.7',
-//         price : 10000,
-//         description : 'loremİpsum loremhgsvgjxbhvgqx'
-//     },
+    { 
+        id : 62,
+        productName: 'Cuban link chain',
+        category: 'Accessories',
+        subCategory : 'Necklace',
+        imageurl: 'https://th.bing.com/th/id/OIP.bc4Oa42pa50KDhkgt9emPgHaHa?w=211&h=212&c=7&r=0&o=5&dpr=1.5&pid=1.7',
+        price : 10000,
+        description : 'loremİpsum loremhgsvgjxbhvgqx'
+    },
+        
+
         
     
-//     { 
-//         id : 53,
-//         productName: 'Money stack necklace',
-//         category: 'Accessories',
-//         subCategory : 'necklace',
-//         imageurl: 'https://th.bing.com/th/id/OIP.BvPWUyeNs12_H05s2pF_4QHaHa?w=200&h=200&c=7&r=0&o=5&dpr=1.5&pid=1.7',
-//         price : 10000,
-//         description : 'loremİpsum loremhgsvgjxbhvgqx'
-//     },
+    { 
+        id : 63,
+        productName: 'Blue necktie',
+        category: 'Accessories',
+        subCategory : 'Necklace',
+        imageurl: 'https://images.unsplash.com/photo-1598032895468-e81825029202?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8dGllfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60',
+        price : 10000,
+        description : 'loremİpsum loremhgsvgjxbhvgqx'
+    },
         
     
-//     { 
-//         id : 54,
-//         productName: 'Lion pendant chain',
-//         category: 'Accessories',
-//         subCategory : 'necklace',
-//         imageurl: 'https://th.bing.com/th/id/OIP.j8Pl8aoHPqzi7MiHp8tlkAHaHa?w=200&h=200&c=7&r=0&o=5&dpr=1.5&pid=1.7',
-//         price : 10000,
-//         description : 'loremİpsum loremhgsvgjxbhvgqx'
-//     },
+    { 
+        id : 64,
+        productName: 'Gold dangling hook earrings',
+        category: 'Accessories',
+        subCategory : 'Earrings',
+        imageurl: 'https://images.unsplash.com/photo-1535556116002-6281ff3e9f36?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTJ8fGVhcnJpbmdzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60',
+        price : 10000,
+        description : 'loremİpsum loremhgsvgjxbhvgqx'
+    },
+        
+    { 
+        id : 65,
+        productName: 'Silver and brown beaded earring',
+        category: 'Accessories',
+        subCategory : 'Earrings',
+        imageurl: 'https://images.unsplash.com/photo-1629224316810-9d8805b95e76?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8ZWFycmluZ3N8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60',
+        price : 10000,
+        description : 'loremİpsum loremhgsvgjxbhvgqx'
+    },
         
     
-//     { 
-//         id : 55,
-//         productName: 'silver round pendant',
-//         category: 'Accessories',
-//         subCategory : 'necklace',
-//         imageurl: 'https://images.unsplash.com/photo-1592007359885-0a8ab1fde063?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTN8fGd1Y2NpJTIwaW50ZXJsb2NraW5nJTIwcGVuZGFudHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60',
-//         price : 10000,
-//         description : 'loremİpsum loremhgsvgjxbhvgqx'
-//     },
+    { 
+        id : 66,
+        productName: 'Gold bracelets',
+        category: 'Accessories',
+          subCategory : 'Bracelets',
+        imageurl: 'https://images.unsplash.com/photo-1583292650898-7d22cd27ca6f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTR8fGFjY2Vzc29yaWVzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60',
+        price : 10000,
+        description : 'loremİpsum loremhgsvgjxbhvgqx'
+    },
+      
+    { 
+        id : 67,
+        productName: 'Black framed Sunglasses',
+        category: 'Accessories',
+        subCategory : 'Glasses',
+        imageurl: 'https://images.unsplash.com/photo-1612902457652-33aff0a641fa?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fGFjY2Vzc29yaWVzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60',
+        price : 10000,
+        description : 'loremİpsum loremhgsvgjxbhvgqx'
+    },
+          
+    { 
+        id : 68,
+        productName: 'camel hat',
+        category: 'Accessories',
+        subCategory : 'Hat',
+        imageurl: 'https://images.unsplash.com/photo-1595642527925-4d41cb781653?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8aGF0fGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60',
+        price : 10000,
+        description : 'loremİpsum loremhgsvgjxbhvgqx'
+    },
         
     
-//     { 
-//         id : 56,
-//         productName: 'Large Gold cross necklace',
-//         category: 'Accessories',
-//         subCategory : 'necklace',
-//         imageurl: 'https://th.bing.com/th/id/OIP.k8J7XaYFcOeL1Lh8_TmWhgHaFj?w=283&h=212&c=7&r=0&o=5&dpr=1.5&pid=1.7',
-//         price : 10000,
-//         description : 'loremİpsum loremhgsvgjxbhvgqx'
-//     },
+    { 
+        id : 69,
+        productName: 'white face cap',
+        category: 'Accessories',
+        subCategory : 'Hat',
+        imageurl: 'https://images.unsplash.com/photo-1588850561407-ed78c282e89b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8aGF0fGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60',
+        price : 10000,
+        description : 'loremİpsum loremhgsvgjxbhvgqx'
+    },
         
-    
-//     { 
-//         id : 57,
-//         productName: 'Cuban link chain',
-//         category: 'Accessories',
-//         subCategory : 'necklace',
-//         imageurl: 'https://th.bing.com/th/id/OIP.bc4Oa42pa50KDhkgt9emPgHaHa?w=211&h=212&c=7&r=0&o=5&dpr=1.5&pid=1.7',
-//         price : 10000,
-//         description : 'loremİpsum loremhgsvgjxbhvgqx'
-//     },
-        
-    
-//     { 
-//         id : 58,
-//         productName: 'Sporty Basketball necklace',
-//         category: 'Accessories',
-//         subCategory : 'necklace',
-//         imageurl: 'https://th.bing.com/th/id/OIP.fzPov3cT2ZaYPCJ7H2DpYgHaHa?w=200&h=199&c=7&r=0&o=5&dpr=1.5&pid=1.7',
-//         price : 10000,
-//         description : 'loremİpsum loremhgsvgjxbhvgqx'
-//     },
-        
-    
-//
-        
-    
-//     { 
-//         id : 60,
-//         productName: 'camel hat',
-//         category: 'Accessories',
-//         subCategory : 'hat',
-//         imageurl: 'https://images.unsplash.com/photo-1595642527925-4d41cb781653?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8aGF0fGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60',
-//         price : 10000,
-//         description : 'loremİpsum loremhgsvgjxbhvgqx'
-//     },
-        
-    
-//     { 
-//         id : 61,
-//         productName: 'white face cap',
-//         category: 'Accessories',
-//         subCategory : 'hat',
-//         imageurl: 'https://images.unsplash.com/photo-1588850561407-ed78c282e89b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8aGF0fGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60',
-//         price : 10000,
-//         description : 'loremİpsum loremhgsvgjxbhvgqx'
-//     },
-        
-    
-//    
-    
-//     { 
-//         id : 63,
-//         productName: 'Couples silver Ring',
-//         category: 'Accessories',
-//         subCategory : 'Rings',
-//         imageurl: 'https://images.unsplash.com/photo-1562249004-1f7289c19c49?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTZ8fHJpbmd8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60',
-//         price : 10000,
-//         description : 'loremİpsum loremhgsvgjxbhvgqx'
-//     },
-//     { 
-//         id : 64,
-//         productName: 'Gold engagement Ring',
-//         category: 'Accessories',
-//         subCategory : 'Rings',
-//         imageurl: 'https://images.unsplash.com/photo-1622398925373-3f91b1e275f5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTR8fHJpbmd8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60',
-//         price : 10000,
-//         description : 'loremİpsum loremhgsvgjxbhvgqx'
-//     },
-//     { 
-//         id : 65,
-//         productName: '24 carat diamond ring',
-//         category: 'Accessories',
-//         subCategory : 'Rings',
-//         imageurl: 'https://media.istockphoto.com/photos/solitaire-diamond-ring-picture-id1410894375?b=1&k=20&m=1410894375&s=170667a&w=0&h=bPZNxHBphjcAnNNVI5Jt0Rft0Ac5uueR4qSj7mgd8qU=',
-//         price : 10000,
-//         description : 'loremİpsum loremhgsvgjxbhvgqx'
-//     },
-//     { 
-//         id : 66,
-//         productName: 'Gucci leather bag',
-//         category: 'Bags',
-//         subCategory : 'Bag',
-//         imageurl: 'https://images.unsplash.com/photo-1548036328-c9fa89d128fa?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8YmFnfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60',
-//         price : 10000,
-//         description : 'loremİpsum loremhgsvgjxbhvgqx'
-//     },
-//     { 
-//         id : 67,
-//         productName: 'Black tote bag',
-//         category: 'Bags',
-//         subCategory : 'Bag',
-//         imageurl: 'https://images.unsplash.com/photo-1572196284554-4e321b0e7e0b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fGJhZ3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60',
-//         price : 10000,
-//         description : 'loremİpsum loremhgsvgjxbhvgqx'
-//     },
-//   
-//     { 
-//         id : 69,
-//         productName: 'red leaher backpack',
-//         category: 'Bags',
-//         subCategory : 'Bag',
-//         imageurl: 'https://images.unsplash.com/photo-1622560480654-d96214fdc887?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTd8fGJhZ3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60',
-//         price : 10000,
-//         description : 'loremİpsum loremhgsvgjxbhvgqx'
-//     }
+    { 
+        id : 70,
+        productName: 'Fashion Rings',
+        category: 'Accessories',
+        subCategory : 'Rings',
+        imageurl: 'https://images.unsplash.com/photo-1587593692659-38c32c496642?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8cmluZ3N8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60',
+        price : 10000,
+        description : 'loremİpsum loremhgsvgjxbhvgqx'
+    },
+    { 
+        id : 71,
+        productName: 'Gold engagement Ring',
+        category: 'Accessories',
+        subCategory : 'Rings',
+        imageurl: 'https://images.unsplash.com/photo-1622398925373-3f91b1e275f5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTR8fHJpbmd8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60',
+        price : 10000,
+        description : 'loremİpsum loremhgsvgjxbhvgqx'
+    },
+    { 
+        id : 72,
+        productName: '24 carat diamond ring',
+        category: 'Accessories',
+        subCategory : 'Rings',
+        imageurl: 'https://media.istockphoto.com/photos/solitaire-diamond-ring-picture-id1410894375?b=1&k=20&m=1410894375&s=170667a&w=0&h=bPZNxHBphjcAnNNVI5Jt0Rft0Ac5uueR4qSj7mgd8qU=',
+        price : 10000,
+        description : 'loremİpsum loremhgsvgjxbhvgqx'
+    },
+
+
+    { 
+        id : 73,
+        productName: 'Gucci leather bag',
+        category: 'Bags',
+        subCategory : 'Purses',
+        imageurl: 'https://images.unsplash.com/photo-1548036328-c9fa89d128fa?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8YmFnfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60',
+        price : 10000,
+        description : 'loremİpsum loremhgsvgjxbhvgqx'
+    },
+    { 
+        id : 74,
+        productName: 'Beige Micheal kors leather handbag',
+        category: 'Bags',
+        subCategory : 'Purses',
+        imageurl: 'https://images.unsplash.com/photo-1606522754091-a3bbf9ad4cb3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTR8fGhhbmRiYWdzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60',
+        price : 10000,
+        description : 'loremİpsum loremhgsvgjxbhvgqx'
+    },
+     { 
+        id : 75,
+        productName: 'Brown and Black Sling bag',
+        category: 'Bags',
+        subCategory : 'Purses',
+        imageurl: 'https://images.unsplash.com/photo-1612902457341-ed7bf0608be3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzR8fGhhbmRiYWdzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60',
+        price : 10000,
+        description : 'loremİpsum loremhgsvgjxbhvgqx'
+    },
+     { 
+        id : 76,
+        productName: 'Peach leather bag',
+        category: 'Bags',
+        subCategory : 'Purses',
+        imageurl: 'https://images.unsplash.com/photo-1591656852283-29bed2fe05ee?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NjJ8fGhhbmRiYWdzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60',
+        price : 10000,
+        description : 'loremİpsum loremhgsvgjxbhvgqx'
+    },
+  
+    { 
+        id : 77,
+        productName: 'red leaher backpack',
+        category: 'Bags',
+        subCategory : 'Backpack',
+        imageurl: 'https://images.unsplash.com/photo-1622560480654-d96214fdc887?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTd8fGJhZ3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60',
+        price : 10000,
+        description : 'loremİpsum loremhgsvgjxbhvgqx'
+    },
+    { 
+        id : 78,
+        productName:'Blue backpack',
+        category: 'Bags',
+        subCategory : 'Backpack',
+        imageurl: 'https://images.unsplash.com/photo-1553062407-98eeb64c6a62?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8YmFja3BhY2t8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60',
+        price : 10000,
+        description : 'loremİpsum loremhgsvgjxbhvgqx'
+    },
+    { 
+        id : 79,
+        productName: 'Brown leaher backpack',
+        category: 'Bags',
+        subCategory : 'Backpack',
+        imageurl: 'https://images.unsplash.com/photo-1622560480605-d83c853bc5c3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTF8fGJhY2twYWNrfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60',
+        price : 10000,
+        description : 'loremİpsum loremhgsvgjxbhvgqx'
+    },
+      { 
+        id : 80,
+        productName: 'Black Briefcase',
+        category: 'Bags',
+        subCategory : 'Briefcases',
+        imageurl: 'https://images.unsplash.com/photo-1510682469697-f2953374f076?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8YnJpZWZjYXNlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60',
+        price : 10000,
+        description : 'loremİpsum loremhgsvgjxbhvgqx'
+    },
+      { 
+        id : 81,
+        productName: 'Brown leaher briefcase',
+        category: 'Bags',
+        subCategory : 'Briefcases',
+        imageurl: 'https://images.unsplash.com/photo-1608731267464-c0c889c2ff92?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8YnJpZWZjYXNlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60',
+        price : 10000,
+        description : 'loremİpsum loremhgsvgjxbhvgqx'
+    }
+
 
 ]
 

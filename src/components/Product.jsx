@@ -1,12 +1,13 @@
 import React from 'react'
+import pictureData from './js/pictureData';
 
 import { useLocation } from 'react-router-dom'
 
 const Product = () => {
   const location = useLocation();
-  const { currId, list } = location.state;
+  const { currId } = location.state;
 
-  let result = list.filter(item=>{
+  let result = pictureData.filter(item=>{
     return item.id === currId
   })
 

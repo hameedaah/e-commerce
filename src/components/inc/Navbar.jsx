@@ -1,6 +1,5 @@
 import React, {useState} from 'react'
 import { RiArrowDropDownLine } from "react-icons/ri";
-import { AiOutlineRight } from "react-icons/ai";
 import '../css/style.css'
 import { Link, useLocation } from 'react-router-dom'
 import pictureData from '../js/pictureData';
@@ -19,6 +18,7 @@ const Navbar = () => {
     let subCategories = [...new Set(newCategories.map(picture=> picture.subCategory))]
     setSubCat(subCategories)
   }
+
 
 
   if(location.pathname === '/albumcarousel' ){
@@ -50,9 +50,10 @@ const Navbar = () => {
             Categories
             <RiArrowDropDownLine />
           </Link>
-           <ul className="dropdown-menu" >
+           <ul className="dropdown-menu" style={{width: '40%'}}>
             {allCategories.map((category, idx)=>
-                      <li key={idx}><Link to={`/categories/${category}`}state={ {category: `${category}`}} className="dropdown-item" onMouseOver={()=>{selectSub(category)}}>{category} <AiOutlineRight /> </Link>
+                      <li key={idx}><Link to={`/categories/${category}`}state={ {category: `${category}`}} className="dropdown-item" onMouseOver={()=>{selectSub(category)}}>{category}</Link>
+                        
                         <ul className='dropdown-menu dropdown-submenu'>
                         
                           

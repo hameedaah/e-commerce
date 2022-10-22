@@ -20,31 +20,40 @@
     font-size: 16px;
 }
 
+.password-field span{
+  position: absolute;
+    margin-left: -25px;
+      margin-top: 8px;
+      font-size: 1rem;
+}
+
 .sign-up-form .form-row{
   display: flex;
-  width: 75%;
-  /* justify-content: center; */
-  /* align-items: center; */
-  /* justify-content: space-between; */
-  border: 1px solid green;
+  width: 80%;
+  flex-wrap: wrap;
   padding: 0;
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
+  height: 40px;
+  
+}
+
+.form-row .submit{
+  margin-right: 1rem;
 }
 
 
 .form-row .remember-me{
 display: flex;
-/* font-size: 12px; */
-border: 1px solid pink;
+white-space: nowrap;
+font-size: 16px;
 
+}
+.remember-me label{
+  padding-left: 0.5rem;
+  padding-top: 0.5rem;
 }
 
 
-input[type=checkbox] {
-  transform: scale(0.5);
-  margin: 0;
-  padding: 0;
-}
 
 .sign-up-form input{
     width: 100%;

@@ -27,7 +27,7 @@ const Shop = ( {info} ) => {
       <div className='shop-text'>
         <h2>Shop</h2>
         <div className='sorting-row'>
-        <p>{`Showing ${indexOfFirstPost+1}-${indexOfLastPost} of ${posts.length} results`}</p>
+        <p>{`Showing ${indexOfFirstPost+1}-${posts.length < 9 ? posts.length : indexOfLastPost} of ${posts.length} results`}</p>
         <select name="sorting" className='sorting' id="sorting">
         <option value="Default Sorting">Default Sorting</option>
         <option value="Sort by Popularity">Sort by Popularity</option>

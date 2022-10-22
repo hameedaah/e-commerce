@@ -1,16 +1,11 @@
 import React, { useEffect } from 'react'
 import {Link} from 'react-router-dom'
-import {FaCalendarAlt} from 'react-icons/fa'
-import { AiFillFolder } from "react-icons/ai";
 import './css/account.css'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
 import 'aos/dist/aos.js'
 import pictureData from './js/pictureData'
 
-const categories = [...new Set(pictureData.map(picture=>
-  picture.category
-))]
 
 let topRated = []
 for(let i=0; i<5; i++){
