@@ -354,7 +354,9 @@ footer{
 }
 
 
-.footer-items li{
+.footer-items .model-items{
+    text-decoration: none;
+    color:gray;
     list-style-type: none;
 }
 

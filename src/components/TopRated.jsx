@@ -7,28 +7,20 @@ import 'aos/dist/aos.js'
 import pictureData from './js/pictureData'
 
 
+
 let topRated = []
 for(let i=0; i<5; i++){
       topRated.push(pictureData[i])
 }
-
-const Sidebar = () => {
-  useEffect(() => {
+const TopRated = () => {
+    useEffect(() => {
     AOS.init({
     duration: 5000  
     }, [])  
     })
 
   return (
-    <section className='sidebar-container'>
-    <div className='price-filter'>
-      <label htmlFor="customRange3" className="form-label">Example range</label>
-<input type="range" className="form-range" min="0" id="customRange3"/>
-</div>
-  
-     
-{/* Top Rated Products */}   
-    <section className="card products-container" data-aos="fade-right" data-aos-easing="ease-out-cubic" data-aos-duration="500">
+       <section className="card products-container" data-aos="fade-right" data-aos-easing="ease-out-cubic" data-aos-duration="500">
     <h2 className='title'>Top Rated Products</h2>
     <ul className='product-list'>
     {topRated.map(item=>{
@@ -56,21 +48,7 @@ const Sidebar = () => {
     </ul>
   
   </section>
-
-
-   <section className="card products-container" data-aos="fade-right" data-aos-easing="ease-out-cubic" data-aos-duration="500">
-    <h2 className='title'>Filter by</h2>
-    <ul className='product-list'>
-      <li>Black</li>
-      <li>Blue</li>
-      <li>Green</li>
-    </ul>
-  </section>
-  </section>
-
-
-
   )
 }
 
-export default Sidebar
+export default TopRated

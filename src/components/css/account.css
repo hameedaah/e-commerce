@@ -39,6 +39,7 @@
 
 .form-row .submit{
   margin-right: 1rem;
+  height: 40px;
 }
 
 
@@ -94,6 +95,7 @@ font-size: 16px;
           margin: 0 auto;
         }
         }
+
     .card{
       width: 100%;
       margin: 1.5rem 0;
@@ -130,6 +132,15 @@ font-size: 16px;
 
    .product-item .product-name,.card.category-list{
     font-weight: bold;
+   }
+
+   .category-list li{
+      list-style-type: none;
+   }
+   .category-list .category-items{
+    text-decoration: none;
+    color: gray;
+    
    }
 
    .product-item img{

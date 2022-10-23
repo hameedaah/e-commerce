@@ -6,10 +6,10 @@ import './css/style.css'
 
 const Model = () => {
     const location = useLocation()
-    const { id } = location.state;
+    const { title } = location.state;
 
     let model = blogData.filter((item)=>{
-        return item.id === id
+        return item.title === title
     })
 
     const {image, mainText} = model[0]

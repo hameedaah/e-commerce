@@ -1,15 +1,23 @@
 import React, {useEffect} from 'react'
+import { Link } from 'react-router-dom'
 import '../css/style.css'
 import { FaFacebookF,FaTwitter,FaVimeoV,FaPinterest,FaInstagram, FaLinkedinIn, FaRss} from "react-icons/fa";
 import { ImYoutube2 } from "react-icons/im";
-import { AiFillFolder } from "react-icons/ai";
+import { AiFillPushpin } from "react-icons/ai";
 import { useLocation } from 'react-router-dom';
 import Album from '../Album';
+import TopRated from '../TopRated';
+import blogData from '../js/blogData.js';
+import ToCategories from '../ToCategories';
 import AOS from 'aos'
 import 'aos/dist/aos.css'
 import 'aos/dist/aos.js'
 
 
+const allModels =  [...new Set(blogData.map(model=>
+  model.title
+))]
+console.log(allModels)
 const Footer = () => {
   const location = useLocation();
 
@@ -35,33 +43,26 @@ const Footer = () => {
         </div>
         <div className='recent footer-items' data-aos="zoom-in-up">
           <h3>recent posts</h3>
-          <ul>
-            <li><AiFillFolder /> Tops</li>
-            <li><AiFillFolder /> Dresses</li>
-            <li> <AiFillFolder /> Shoes</li>
-            <li><AiFillFolder /> Accessories</li>
-            <li><AiFillFolder /> Bags</li>
+          <ul>  
+            {allModels.map((model, idx)=>{
+              return(
+                <div key={idx}>
+                <Link to="/blog/model" className='model-items'
+                   state={{
+                    title: model,
+                   }}>
+                     <li><AiFillPushpin /> {model}</li>
+                   </Link>
+                   </div>
+              )
+            })}
           </ul>
         </div>
         <div className='categories footer-items' data-aos="zoom-in-up">
-          <h3>categories</h3>
-          <ul>
-            <li><AiFillFolder /> Tops</li>
-            <li><AiFillFolder /> Dresses</li>
-            <li> <AiFillFolder /> Shoes</li>
-            <li><AiFillFolder /> Accessories</li>
-            <li><AiFillFolder /> Bags</li>
-          </ul>
+         <ToCategories />
         </div>
         <div className='products footer-items' data-aos="zoom-in-up">
-          <h3>products</h3>
-          <ul>
-            <li><AiFillFolder /> Tops</li>
-            <li><AiFillFolder /> Dresses</li>
-            <li> <AiFillFolder /> Shoes</li>
-            <li><AiFillFolder /> Accessories</li>
-            <li><AiFillFolder /> Bags</li>
-          </ul>
+         <TopRated  />
         </div>
         </section>
         <section className='footer-bottom'>

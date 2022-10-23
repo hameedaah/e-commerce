@@ -9,8 +9,7 @@ import 'aos/dist/aos.css'
 import 'aos/dist/aos.js'
 import blogData from './js/blogData' 
 import Sidebar from './Sidebar'
-import { RiRunFill } from 'react-icons/ri'
-import Footer from './inc/Footer'
+
 
 
 
@@ -65,7 +64,7 @@ const Blog = () => {
                 <div>
                    <Link to="/blog/model"
                    state={{
-                    id: id,
+                    title: title,
                    }}>
                     <button className='blog-btn'>Read More</button>
                    </Link>

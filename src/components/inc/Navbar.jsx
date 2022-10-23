@@ -56,7 +56,6 @@ const Navbar = () => {
                         
                         <ul className='dropdown-menu dropdown-submenu'>
                         
-                          
                           {subCat.map((subCategory, index)=>{
                             return(
                           <li key={index}>

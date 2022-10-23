@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from 'react'
-import { Link } from 'react-router-dom'
+// import { Link } from 'react-router-dom'
 import pictureData from './js/pictureData'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
@@ -7,7 +7,7 @@ import 'aos/dist/aos.js'
 
 const Search = () => {
      const [message, setMessage] = useState('');
-     const [data, setData] = useState('');
+    //  const [data, setData] = useState('');
 
   const handleChange = event => {
     setMessage(event.target.value);
@@ -19,7 +19,7 @@ const Search = () => {
         return message.toLowerCase() === item.productName.toLowerCase()
     })
     console.log(searchResult)
-    setData(searchResult)
+    // setData(searchResult)
    
   };
 

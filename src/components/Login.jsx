@@ -11,7 +11,6 @@ const togglePassword = (e) => {
   setShowPassword(!showPassword)
 }
 
-
   return ( 
     <div style={{width: '47%'}}>
       <h2 className='account-login'>Login</h2>
