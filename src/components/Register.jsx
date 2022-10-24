@@ -11,7 +11,7 @@ const Register = () => {
         
         
         <label  htmlFor="email">Username or Email Address <span style={{color:'red'}} className="required">*</span></label>
-        <input type="email" name="email" id="email" required></input>
+        <input type="email" name="email" id="register-email" required></input>
         <p>A link to set a new password will be sent to your email address.</p>
         <p>Your personal data will be used to support your experience throughout this website, to manage access to your account, and for other purposes described in our <a href="# "> privacy policy.</a></p>
         <button className="btn btn-outline-danger" type="submit">REGISTER</button>
