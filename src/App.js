@@ -48,8 +48,8 @@ function App() {
         <Route path='/home/main-testimonial' element={<BigTestimonial />}/>
         <Route path='/albumcarousel' element={<AlbumCarousel />}/>
         <Route path='/albumcarousel/big-album' element={<BigAlbum />}/>
-        <Route path='/contact' element={<Contact />}/>
-        <Route path='/account' element={<Account />}/>
+        <Route path='/contact' element={<Contact />} />
+        <Route path='/account' element={<Account />} />
         {/* <Route path="*" element={<Error />}/> */}
         
         </Routes>

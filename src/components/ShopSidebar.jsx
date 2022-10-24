@@ -5,6 +5,7 @@ import AOS from 'aos'
 import 'aos/dist/aos.css'
 import 'aos/dist/aos.js'
 import pictureData from './js/pictureData'
+import TopRated from './TopRated'
 
 
 let topRated = []
@@ -22,45 +23,21 @@ const Sidebar = () => {
   return (
     <section className='sidebar-container'>
     <div className='price-filter'>
-      <label htmlFor="customRange3" className="form-label">Example range</label>
-<input type="range" className="form-range" min="0" id="customRange3"/>
+    <label htmlFor="customRange2" className="form-label">Filter by price</label>
+<input type="range" className="form-range slider" min="0" max="5" id="customRange2"/>
+<div className='filter-and-range'>
+  <button className='filter-btn'>filter</button>
+  <p>Price: <span>&#8358;</span>5000 - <span>&#8358;</span>10000</p>
+  </div>
 </div>
   
-     
 {/* Top Rated Products */}   
-    <section className="card products-container" data-aos="fade-right" data-aos-easing="ease-out-cubic" data-aos-duration="500">
-    <h2 className='title'>Top Rated Products</h2>
-    <ul className='product-list'>
-    {topRated.map(item=>{
-          const {id, price,imageurl, productName} = item
-          return(
-            <Link key={id} to="/product"
-            style={{textDecoration: 'none'}}
-            state={{
-                       list: pictureData,
-                       currId: id 
-                       }}
-            >
-            <li className='product-item'>
-              <div className='product-text'>
-               <p className='product-name'>{productName}</p>
-               <p className='price'><span>&#8358;</span>{price}</p>
-               </div>
-                <img src={imageurl} alt='product' className='product-img'/>
-            </li>
-         
-          
-          </Link>
-          )
-        })}
-    </ul>
-  
-  </section>
+    <TopRated />
 
 
-   <section className="card products-container" data-aos="fade-right" data-aos-easing="ease-out-cubic" data-aos-duration="500">
+   <section className="card filter-container" data-aos="fade-right" data-aos-easing="ease-out-cubic" data-aos-duration="500">
     <h2 className='title'>Filter by</h2>
-    <ul className='product-list'>
+    <ul className='shop-list'>
       <li>Black</li>
       <li>Blue</li>
       <li>Green</li>
