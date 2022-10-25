@@ -6,20 +6,30 @@
  
 body{
     max-width: 100%;
+    scroll-behavior: smooth;
 } 
 
-/* Beginning Of Menu bar */
-.account-link {
-    text-decoration: none;
+/* scroll up icon */
+.scroll-up {
+    height: 50px;
+    width: 50px;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background: rgb(61, 61, 236);
+    display: flex;
+    justify-content: center;
+    align-items: center;
     color: white;
+    font-size: 12px;
+    text-decoration: none;
 }
 
-.account-link:hover{
-    color: gray;
+.no-scroll {
+    display: none;
 }
 
-
-/*End Of Menu bar */
+/* scroll up icon end */
 
 
 /* Beginning Of Navbar */
@@ -84,6 +94,15 @@ body{
 /* End Of Navbar */
 
 /* Beginning of menu bar */
+.account-link {
+    text-decoration: none;
+    color: white;
+}
+
+.account-link:hover {
+    color: gray;
+}
+
 .menu-container{
     background: black;
     color: grey;
@@ -116,6 +135,25 @@ body{
 
 .menu-item{
     padding:0 1rem;
+}
+
+.menu-item.cart{
+    display: flex;
+}
+
+.cart .cart-icon{
+    margin-top: 0.75rem;
+}
+.menu-item .add-cart{
+    background: red;
+    padding: 0 5px;
+
+    /* position: absolute; */
+    /* top: 5px; */
+    /* margin-left: 15px; */
+    border-radius: 70%;
+    font-size: 14px;
+
 }
 
 /* End of menu bar */
@@ -582,22 +620,7 @@ img.carousel-image {
 /* Footer ending */
 
 
-/* scroll up icon */
-a.scroll-up {
-    height: 50px;
-    width: 50px;
-    position: fixed;
-    bottom: 30px;
-    right: 30px;
-    background: rgb(61, 61, 236);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    font-size: 1.5rem;
-    text-decoration: none;
-}
-/* scroll up icon end */
+
 
 
 /* Contact Page Beginning */

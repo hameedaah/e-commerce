@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useState} from 'react'
 import { Link, useLocation } from 'react-router-dom';
 import { BsEnvelopeFill, BsFillPersonFill } from "react-icons/bs";
 import { HiLocationMarker } from "react-icons/hi";
@@ -10,6 +10,7 @@ import '../css/style.css'
 
 const Menu = () => {
      const location = useLocation();
+     const [cartValue, setCartValue] = useState(0)
     if(location.pathname === '/albumcarousel' ){
     return null
   }
@@ -41,8 +42,9 @@ const Menu = () => {
                 <input type="search" placeholder='Search'/>
             </li>
             |
-            <li className='menu-item'>
-                <FaShoppingCart />
+            <li className='menu-item cart'>
+                <FaShoppingCart className='cart-icon'/>
+                <p className='add-cart'>{cartValue}</p>
             </li>
 
         </ul>

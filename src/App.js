@@ -19,7 +19,8 @@ import Contact from './components/Contact'
 import '../src/components/css/style.css'
 import { IoIosArrowUp } from "react-icons/io";
 import pictureData from './components/js/pictureData'
-
+import ScrollToTop from './components/ScrollToTop'
+import ScrollButton from './components/ScrollButton'
 
 
 
@@ -32,9 +33,9 @@ function App() {
   return (
     <Router>
       <div>
-       <Menu id="top"/>
+       <Menu/>
         <Navbar />
-        
+        <ScrollToTop />
         <Routes>
         <Route path='/' element={<Home />}/>
         <Route path='/home' element={<Home />}/>
@@ -53,9 +54,10 @@ function App() {
         {/* <Route path="*" element={<Error />}/> */}
         
         </Routes>
-         <a href="#top" className='scroll-up'>
+        <ScrollButton />
+         {/* <a href="#top" className='scroll-up'>
         <IoIosArrowUp />
-          </a>
+          </a> */}
         
       
         <Footer />

@@ -7,8 +7,8 @@ import './css/shop.css'
 
 const Shop = ( {info} ) => {
     const posts = info
-    // const params = useParams();
-    // console.log(params)
+    const { test } = useParams();
+    console.log(test)
     // const posts = params.infor
     // const posts = params.infor
     const [currentPage, setCurrentPage] = useState(1)

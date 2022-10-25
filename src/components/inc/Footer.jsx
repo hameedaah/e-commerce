@@ -60,8 +60,8 @@ const Footer = () => {
         <div className='categories footer-items' data-aos="zoom-in-up">
          <ToCategories />
         </div>
-        <div className='products footer-items' data-aos="zoom-in-up">
-         <TopRated  />
+        <div className='products footer-items'  data-aos="zoom-in-up">
+         <TopRated style={{background: 'blue'}}/>
         </div>
         </section>
         <section className='footer-bottom'>
