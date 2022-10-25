@@ -1,5 +1,5 @@
 import React, {useState} from 'react'
-import { Link, useParams } from 'react-router-dom'
+import { Link,useLocation } from 'react-router-dom'
 import {AiFillEye, AiOutlineShopping} from 'react-icons/ai'
 import Pagination from './Pagination'
 import ShopSidebar from './ShopSidebar'
@@ -7,10 +7,11 @@ import './css/shop.css'
 
 const Shop = ( {info} ) => {
     const posts = info
-    const { test } = useParams();
-    console.log(test)
-    // const posts = params.infor
-    // const posts = params.infor
+    const location = useLocation();
+// console.log(props, " props");
+// console.log(location, " useLocation Hook");
+const data = location.state?.test;
+    console.log(data)
     const [currentPage, setCurrentPage] = useState(1)
     const postsPerPage = 9
 

@@ -55,9 +55,6 @@ function App() {
         
         </Routes>
         <ScrollButton />
-         {/* <a href="#top" className='scroll-up'>
-        <IoIosArrowUp />
-          </a> */}
         
       
         <Footer />
