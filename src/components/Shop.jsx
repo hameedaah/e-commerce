@@ -1,5 +1,6 @@
 import React, {useState} from 'react'
 import { Link } from 'react-router-dom'
+import {AiFillEye, AiOutlineShopping} from 'react-icons/ai'
 import Pagination from './Pagination'
 import ShopSidebar from './ShopSidebar'
 import './css/shop.css'
@@ -21,9 +22,10 @@ const Shop = ( {info} ) => {
     
   return (   
     <div>
+
     <div className='shop-page'>
-    
     <section className='shop-container'>
+
       <div className='shop-text'>
         <h2>Shop</h2>
         <div className='sorting-row'>
@@ -38,32 +40,36 @@ const Shop = ( {info} ) => {
         </select>
         </div>
         </div>
-    <div className='all-items'>
-    
+
+
+    <div className='all-items'> 
         {currentPosts.map(item=>{
             const {id,productName,imageurl,price} = item
+
             return (
                 <div key={id} className='item-container'>
                     <div className='item'>
-                     <Link to="/product"
+                     <Link to="/product" style={{textDecoration: 'none'}}
                      state={{
                        list: info,
                        currId: id 
                        }}
                        >
-                        <img src={imageurl} className='item-img' alt={productName}/>
-                    <p>{price}</p>
+                       <img src={imageurl} className='item-img' alt={productName}/>
+                    <p className='shop-price'><span>&#8358;</span>{price}</p>
                     </Link>
                     </div>
+
                     <div>
-                       <button>add to cart</button>
-                        <Link to="/product" 
+                       <button className='shop-btn cart'><AiOutlineShopping className='shop-icon'/> add to cart</button>
+                     </div>
+                     <div>  
+                     <Link to="/product" 
                      state={{
                        list: info,
                        currId: id 
-                       }}><button>view product</button></Link>
-                      
-                      </div>
+                       }}><button className='shop-btn'><AiFillEye className='shop-icon'/> view product</button></Link>
+                    </div>
                 </div>
 
             )
@@ -71,9 +77,11 @@ const Shop = ( {info} ) => {
         
      
     </div>
-    <Pagination className='paginate' postsPerPage={postsPerPage} totalPosts={posts.length} paginate={paginate} currentPage={currentPage}/>
+
+    <Pagination className='paginate' postsPerPage={postsPerPage} totalPosts={posts.length} paginate={paginate} currentPage={currentPage} />
     </section> 
     <ShopSidebar />
+
     </div>
     </div>
   )

@@ -1,4 +1,5 @@
 import React from 'react'
+import './css/style.css'
 
 const Pagination = ( {postsPerPage, totalPosts, paginate, currentPage}) => {
    const pageNumbers = []
@@ -8,7 +9,7 @@ const Pagination = ( {postsPerPage, totalPosts, paginate, currentPage}) => {
    }
    
   return (
-    <nav aria-label="...">
+    <nav aria-label="..." className='pagination'>
   <ul className="pagination justify-content-center">
 
 

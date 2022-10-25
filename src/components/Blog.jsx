@@ -11,11 +11,6 @@ import blogData from './js/blogData'
 import Sidebar from './Sidebar'
 
 
-
-
-
-
-
 const Blog = () => {
   // const posts = info
   const [currentPage, setCurrentPage] = useState(1)
