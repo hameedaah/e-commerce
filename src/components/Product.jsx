@@ -23,9 +23,9 @@ const Product = () => {
       <div >
         <img src={imageurl} alt="" className="big-img"/>
       </div>     
-      <div className="box">
+      <div className="product-box">
         
-        <div className="row"><p>{id}</p>
+        <div className="product-row"><p>{id}</p>
           <h2>{productName}</h2>
           <p>{category}</p>
           <span>{price}</span>
@@ -37,7 +37,7 @@ const Product = () => {
 
         </div> */}
 
-        <button className="cart"> Add to cart</button>
+        <button className="cart"> ADD TO CART</button>
 
       </div>
 
