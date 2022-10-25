@@ -17,7 +17,6 @@ import 'aos/dist/aos.js'
 const allModels =  [...new Set(blogData.map(model=>
   model.title
 ))]
-console.log(allModels)
 const Footer = () => {
   const location = useLocation();
 

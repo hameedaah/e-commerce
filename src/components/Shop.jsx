@@ -1,5 +1,5 @@
 import React, {useState} from 'react'
-import { Link } from 'react-router-dom'
+import { Link, useParams } from 'react-router-dom'
 import {AiFillEye, AiOutlineShopping} from 'react-icons/ai'
 import Pagination from './Pagination'
 import ShopSidebar from './ShopSidebar'
@@ -7,6 +7,10 @@ import './css/shop.css'
 
 const Shop = ( {info} ) => {
     const posts = info
+    // const params = useParams();
+    // console.log(params)
+    // const posts = params.infor
+    // const posts = params.infor
     const [currentPage, setCurrentPage] = useState(1)
     const postsPerPage = 9
 

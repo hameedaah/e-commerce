@@ -173,6 +173,51 @@ font-size: 16px;
 /*Shop Sidebar Beginning */
 .price-filter{
   height: 130px;
-  border: 1px solid red;
+  /* border: 1px solid gray; */
+  border-radius: 5px;
+  padding: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.filter-and-range{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.filter-btn{
+  padding: 5px 15px;
+  background: black;
+  border: none;
+  color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.price-filter .form-label{
+  font-size: 20px;
+  font-weight: bolder;
+}
+
+/*change slider color*/
+.slider::-webkit-slider-runnable-track {
+  background-color: #333333;
+}
+
+.slider::-webkit-slider-thumb {
+  background-color: #333333;
+}
+
+.filter-container{
+  /* background: blue; */
+  /* padding: 20px; */
+}
+.filter-container .shop-list{
+  padding: 0;
+}
+
+.filter-container .shop-list li{
+  list-style-type: none;
+
 }
 /*Shop Sidebar Ending */
