@@ -1,6 +1,7 @@
 import React from 'react'
 import pictureData from './js/pictureData';
 import './css/product.css'
+import TopRated from './TopRated'
 
 import { useLocation } from 'react-router-dom'
 
@@ -16,12 +17,12 @@ const Product = () => {
  const { id, productName, category, imageurl, price, description } = result[0]
 
   return (
-    <div className="detail">
-      <div className="big-img">
-        <img src={imageurl} alt="" />
-
-      </div>
+    <section className='detail-page'>
       
+    <div className="detail">
+      <div >
+        <img src={imageurl} alt="" className="big-img"/>
+      </div>     
       <div className="box">
         
         <div className="row"><p>{id}</p>
@@ -42,6 +43,10 @@ const Product = () => {
 
 
     </div> 
+    <div className='detail-topRated'>
+    <TopRated />
+    </div>
+    </section>
   )
 }
 
