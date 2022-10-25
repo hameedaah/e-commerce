@@ -32,12 +32,14 @@ const Product = () => {
           <p>{description}</p>
         </div>
 
-        {/* <div className="thumb">
-          <img src={imageurl} alt="" />
+       
 
-        </div> */}
+        <button className="cart"> ADD TO CART</button> 
+        
+        <div className="thumb">
+          <img src={imageurl} alt=""  className='small-img'/>
 
-        <button className="cart"> ADD TO CART</button>
+        </div>
 
       </div>
 
