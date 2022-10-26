@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react'
+import React, {useState, useEffect, useContext} from 'react'
 import { Link} from 'react-router-dom'
 import {AiFillEye, AiOutlineShopping} from 'react-icons/ai'
 import Pagination from './Pagination'
@@ -7,13 +7,21 @@ import AOS from 'aos'
 import 'aos/dist/aos.css'
 import 'aos/dist/aos.js'
 import './css/style.css'
+import { UserContext } from '../context/UserContext'
+
+
+
+
+
 
 const Shop = ( {info} ) => {
+  
+    // const [value, setValue] = useState(0)
     const posts = info
     
     const [currentPage, setCurrentPage] = useState(1)
     const postsPerPage = 9
-
+const {increase, setIncrease} = useContext(UserContext)
     //current posts
     const indexOfLastPost = currentPage * postsPerPage;
     const indexOfFirstPost = indexOfLastPost - postsPerPage;
@@ -29,6 +37,10 @@ const Shop = ( {info} ) => {
     duration: 5000  
     }, [])  
     })
+
+    // useEffect(()=>{
+    //   window.addEventListener('load', )
+    // })
 
   return (   
     <div>
@@ -71,7 +83,10 @@ const Shop = ( {info} ) => {
                     </div>
 
                     <div>
-                       <button className='shop-btn cart'><AiOutlineShopping className='shop-icon'/> add to cart</button>
+                       <button className='shop-btn cart' onClick={() => {
+                        setIncrease(increase + 1)
+                        // console.log()
+                        }}><AiOutlineShopping className='shop-icon'/> add to cart</button>
                      </div>
                      <div>  
                      <Link to="/product" 

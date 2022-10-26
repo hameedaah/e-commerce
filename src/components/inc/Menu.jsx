@@ -5,17 +5,21 @@ import { HiLocationMarker } from "react-icons/hi";
 import { AiFillPhone,AiOutlineSearch } from "react-icons/ai";
 import { FaShoppingCart } from "react-icons/fa";
 import pictureData from '../js/pictureData'
+import { UserContext } from '../../context/UserContext';
+import { useContext } from 'react';
 import Shop from '../Shop'
 import '../css/style.css'
 
 
 
-const Menu = () => {
+const Menu = (props) => {
+    const {increase} = useContext(UserContext)
      const location = useLocation();
     //  const [cartValue, setCartValue] = useState(0)
      const [searchTerm, setSearchTerm] = useState('');
      const [test, setTest] = useState(pictureData);
 
+     console.log(props.value)
 
   const handleChange = (e) => {
     
@@ -73,7 +77,7 @@ const Menu = () => {
             |
             <li className='menu-item cart'>
                 <FaShoppingCart className='cart-icon'/>
-                <p className='add-cart'>0</p>
+                <p className='add-cart'>{increase}</p>
             </li>
 
         </ul>
