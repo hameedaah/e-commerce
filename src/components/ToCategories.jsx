@@ -14,7 +14,7 @@ const categories = [...new Set(pictureData.map(picture=>
 ))]
 
 
-const ToCategories = ({background, color, boxShadow, children}) => {
+const ToCategories = ({background, color, boxShadow,fontWeight, children}) => {
 
      useEffect(() => {
     AOS.init({
@@ -23,8 +23,8 @@ const ToCategories = ({background, color, boxShadow, children}) => {
     })
 
   return (
-     <ul className="card category-list" style={{backgroundColor: background,color:color, boxShadow: boxShadow}}   data-aos="fade-right" data-aos-easing="ease-out-cubic" data-aos-duration="500">  {children}
-      <h2 className='title'>Categories</h2>
+     <ul className="card category-list" style={{backgroundColor: background,color:color, boxShadow: boxShadow,fontWeight:fontWeight,}}   data-aos="fade-right" data-aos-easing="ease-out-cubic" data-aos-duration="500">  {children}
+      <h2 style={{fontWeight:fontWeight}} className='title'>Categories</h2>
       {categories.map((category, idx)=>{
         return(
           <li key={idx} >

@@ -1,5 +1,6 @@
 import React, {useEffect, useState} from 'react';
 import {MdKeyboardArrowUp} from 'react-icons/md';
+import './css/style.css'
 
 const ScrollButton = () =>{
 
@@ -29,9 +30,9 @@ useEffect(()=>{
 
 
 return (
-<button>
+<button className={visible ? 'scroll-up' : 'no-scroll'}>
      <MdKeyboardArrowUp onClick={scrollToTop} 
-     className={visible ? 'scroll-up' : 'no-scroll'} />
+      />
     </button>
 
 );

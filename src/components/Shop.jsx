@@ -1,17 +1,16 @@
-import React, {useState} from 'react'
-import { Link,useLocation } from 'react-router-dom'
+import React, {useState, useEffect} from 'react'
+import { Link} from 'react-router-dom'
 import {AiFillEye, AiOutlineShopping} from 'react-icons/ai'
 import Pagination from './Pagination'
 import ShopSidebar from './ShopSidebar'
-import './css/shop.css'
+import AOS from 'aos'
+import 'aos/dist/aos.css'
+import 'aos/dist/aos.js'
+import './css/style.css'
 
 const Shop = ( {info} ) => {
     const posts = info
-    const location = useLocation();
-// console.log(props, " props");
-// console.log(location, " useLocation Hook");
-const data = location.state?.test;
-    console.log(data)
+    
     const [currentPage, setCurrentPage] = useState(1)
     const postsPerPage = 9
 
@@ -25,10 +24,16 @@ const data = location.state?.test;
       setCurrentPage(pageNumber)
     }
     
+     useEffect(() => {
+    AOS.init({
+    duration: 5000  
+    }, [])  
+    })
+
   return (   
     <div>
 
-    <div className='shop-page'>
+    <div className='shop-page' data-aos="fade-left" data-aos-easing="ease-out-cubic" data-aos-duration="1000">
     <section className='shop-container'>
 
       <div className='shop-text'>
@@ -53,7 +58,7 @@ const data = location.state?.test;
 
             return (
                 <div key={id} className='item-container'>
-                    <div className='item'>
+                    <div className='shop-item'>
                      <Link to="/product" style={{textDecoration: 'none'}}
                      state={{
                        list: info,

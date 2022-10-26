@@ -11,7 +11,7 @@ import blogData from './js/blogData'
 import Sidebar from './Sidebar'
 
 
-const Blog = () => {
+const Blog = ({display ,children}) => {
   // const posts = info
   const [currentPage, setCurrentPage] = useState(1)
   const postsPerPage = 3
@@ -40,7 +40,7 @@ const Blog = () => {
     
   return (
     <div>
-    <div className='blog-large-image'></div>
+    <div style={{display: display}} className='blog-large-image'></div>
     <div className='blog-container'>
       
     <section className='main-blog'>
@@ -49,7 +49,7 @@ const Blog = () => {
         return(
           <div data-aos="fade-left" className='box' key={id}>
           <div className='outer'>
-             <h1>{title}</h1>
+             <h1 className='box-title'>{title}</h1>
              <div className='left-side'>
               <img src={image} alt="" />
              </div>
@@ -61,7 +61,7 @@ const Blog = () => {
                    state={{
                     title: title,
                    }}>
-                    <button className='blog-btn'>Read More</button>
+                    <button className='blog-btn submit'>Read More</button>
                    </Link>
                  </div>
                </p>

@@ -14,9 +14,8 @@ const Home = () => {
       <Carousel />
       <Testimonial />
    <div className='home-image'>
-    <h2>This is the parallax image</h2>
   </div>
-    <Blog />
+    <Blog display= 'none'/>
     </div>
   )
 }

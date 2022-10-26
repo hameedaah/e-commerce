@@ -12,7 +12,7 @@ let topRated = []
 for(let i=0; i<5; i++){
       topRated.push(pictureData[i])
 }
-const TopRated = ({background, color, boxShadow, children}) => {
+const TopRated = ({background, color, boxShadow, fontWeight, children}) => {
     useEffect(() => {
     AOS.init({
     duration: 5000  
@@ -21,8 +21,8 @@ const TopRated = ({background, color, boxShadow, children}) => {
 
   return (
        <section className="card products-container" 
-       style={{backgroundColor: background,color:color, boxShadow: boxShadow}}  data-aos="fade-right" data-aos-easing="ease-out-cubic" data-aos-duration="500"> {children}
-    <h2 className='title'>Top Rated Products</h2>
+       style={{backgroundColor: background,color:color, boxShadow: boxShadow, fontWeight:fontWeight}}  data-aos="fade-right" data-aos-easing="ease-out-cubic" data-aos-duration="500"> {children}
+    <h2 className='title' style={{fontWeight: fontWeight}}>Top Rated Products</h2>
     <ul className='product-list'>
     {topRated.map(item=>{
           const {id, price,imageurl, productName} = item
@@ -36,8 +36,8 @@ const TopRated = ({background, color, boxShadow, children}) => {
             >
             <li className='product-item'>
               <div className='product-text'>
-               <p className='product-name' style={{color: color}}>{productName}</p>
-               <p className='price'><span>&#8358;</span>{price}</p>
+               <p className='product-name' style={{color: color, fontWeight:fontWeight}}>{productName}</p>
+               <p style={{color: color}} className='price'><span>&#8358;</span>{price}</p>
                </div>
                 <img src={imageurl} alt='product' className='product-img'/>
             </li>

@@ -13,20 +13,19 @@ const Carousel = () => {
   <div className="carousel-inner">
     <div className="carousel-item active first image">
         <div className='inner-text'>
-          <h1>our fashion website</h1>
-          <Link to="/"><button className='button'>Read More</button></Link>
+          <h1 className='welcome'>Welcome</h1>
         </div>
     </div>
     <div className="carousel-item second image">
       <div className='inner-text'>
-          <h1>welcome</h1>
-          <Link to="/"><button className='button'>Read More</button></Link>
+          <h1>Browse through Our Catalogue</h1>
+          <Link to="/"><button className='button'>Shop</button></Link>
         </div>
     </div>
     <div className="carousel-item third image">
       <div className='inner-text'>
-          <h1>tap to read more</h1>
-          <Link to="/"><button className='button'>Read More</button></Link>
+          <h1>Browse through Our Catalogue</h1>
+          <Link to="/"><button className='button'>Shop</button></Link>
         </div>
     </div>
   </div>

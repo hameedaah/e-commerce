@@ -22,11 +22,11 @@ const Sidebar = () => {
 
   return (
     <section className='sidebar-container'>
-    <div className='price-filter'>
+    <div className='price-filter' data-aos="fade-right" data-aos-easing="ease-out-cubic" data-aos-duration="500">
     <label htmlFor="customRange2" className="form-label">Filter by price</label>
 <input type="range" className="form-range slider" min="0" max="5" id="customRange2"/>
 <div className='filter-and-range'>
-  <button className='filter-btn'>filter</button>
+  <button className='filter-btn submit'>filter</button>
   <p>Price: <span>&#8358;</span>5000 - <span>&#8358;</span>10000</p>
   </div>
 </div>
