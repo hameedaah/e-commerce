@@ -35,13 +35,7 @@ const Product = () => {
 
        
 
-        <button className="cart"> ADD TO CART</button> 
-        
-        {/* <div className="thumb">
-          <img src={imageurl} alt=""  className='small-img'/>
-
-        </div> */}
-
+        <button className="product-cart"> ADD TO CART</button> 
       </div>
 
 
