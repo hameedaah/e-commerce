@@ -2,11 +2,13 @@ import React from 'react'
 import pictureData from './js/pictureData';
 import './css/product.css'
 import TopRated from './TopRated'
+import { UserContext } from '../context/UserContext';
+import { useContext } from 'react';
 
 import { useLocation } from 'react-router-dom'
 
 const Product = () => {
-  
+  const {increase, setIncrease} = useContext(UserContext)
   const location = useLocation();
   const { currId } = location.state;
 
@@ -28,20 +30,22 @@ const Product = () => {
         
         <div className="product-row">
           <h2>{productName}</h2>
-          <p>{category}</p>
-          <span>{price}</span>
+          <p>{`CATEGORY: ${category}`}</p>
+          <p><span>&#8358;</span>{price}</p>
           <p>{description}</p>
         </div>
 
        
 
-        <button className="product-cart"> ADD TO CART</button> 
+        <button className="submit product-btn" 
+        onClick={() => {setIncrease(increase + 1)}}
+        >ADD TO CART</button> 
       </div>
 
 
     </div> 
     <div className='detail-topRated'>
-    <TopRated />
+    <TopRated className="dtr"/>
     </div>
     </section>
   )

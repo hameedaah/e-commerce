@@ -15,13 +15,12 @@ import { UserContext } from '../context/UserContext'
 
 
 const Shop = ( {info} ) => {
-  
-    // const [value, setValue] = useState(0)
     const posts = info
     
     const [currentPage, setCurrentPage] = useState(1)
     const postsPerPage = 9
 const {increase, setIncrease} = useContext(UserContext)
+
     //current posts
     const indexOfLastPost = currentPage * postsPerPage;
     const indexOfFirstPost = indexOfLastPost - postsPerPage;
@@ -38,9 +37,7 @@ const {increase, setIncrease} = useContext(UserContext)
     }, [])  
     })
 
-    // useEffect(()=>{
-    //   window.addEventListener('load', )
-    // })
+  
 
   return (   
     <div>
@@ -85,7 +82,6 @@ const {increase, setIncrease} = useContext(UserContext)
                     <div>
                        <button className='shop-btn cart' onClick={() => {
                         setIncrease(increase + 1)
-                        // console.log()
                         }}><AiOutlineShopping className='shop-icon'/> add to cart</button>
                      </div>
                      <div>  
