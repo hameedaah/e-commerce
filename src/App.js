@@ -17,10 +17,10 @@ import Model from './components/Model'
 import Account from './components/Account'
 import Contact from './components/Contact'
 import '../src/components/css/style.css'
-import { IoIosArrowUp } from "react-icons/io";
 import pictureData from './components/js/pictureData'
 import ScrollToTop from './components/ScrollToTop'
 import ScrollButton from './components/ScrollButton'
+import PageNotFound from './components/404-page'
 
 
 
@@ -51,12 +51,12 @@ function App() {
         <Route path='/albumcarousel/big-album' element={<BigAlbum />}/>
         <Route path='/contact' element={<Contact />} />
         <Route path='/account' element={<Account />} />
-        {/* <Route path="*" element={<Error />}/> */}
+        <Route path="*" element={<PageNotFound />}/>
         
         </Routes>
         <ScrollButton />
         
-      
+    
         <Footer />
       </div>
       </Router>

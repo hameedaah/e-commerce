@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import './css/carousel.css'
+import './css/style.css'
 
 
 const Carousel = () => {
@@ -8,7 +8,7 @@ const Carousel = () => {
   
   return (
     
-    <div>
+    <div className='carousel-page'>
         <div id="carouselExampleControls" className="carousel slide" data-bs-ride="carousel">
   <div className="carousel-inner">
     <div className="carousel-item active first image">

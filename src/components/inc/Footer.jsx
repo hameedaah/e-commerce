@@ -58,10 +58,10 @@ const Footer = () => {
           </ul>
         </div>
         <div className='categories footer-items' data-aos="zoom-in-up">
-         <ToCategories />
+         <ToCategories background="inherit" color="white" boxShadow='none'/>
         </div>
-        <div className='products footer-items'  data-aos="zoom-in-up">
-         <TopRated style={{background: 'blue'}}/>
+        <div className='products footer-items'   data-aos="zoom-in-up">
+         <TopRated background="inherit" color="white" boxShadow='none'/>
         </div>
         </section>
         <section className='footer-bottom'>

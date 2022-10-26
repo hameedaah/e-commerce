@@ -65,7 +65,7 @@ const Menu = () => {
                 <form className="d-flex" role="search">
       <input className="form-control me-2" type="search" style={{height: '30px'}} placeholder="Search..." aria-label="Search" onChange={handleChange}/>
        <Link to='/product' state={{currId: id}}>
-            <button className="btn btn-outline-warning" style={{ padding: '5px', height: '30px', display: 'flex', alignItems: 'center'}} type="submit"><AiOutlineSearch /></button> 
+            <button className="btn btn-outline-warning menu-submit" style={{ padding: '5px', height: '30px', display: 'flex', alignItems: 'center'}} type="submit"><AiOutlineSearch /></button> 
         </Link>
     </form>
                 {/* <input type="search" placeholder='Search'/> */}
