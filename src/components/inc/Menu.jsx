@@ -1,21 +1,45 @@
-import React from 'react'
+import React, {useState} from 'react'
 import { Link, useLocation } from 'react-router-dom';
 import { BsEnvelopeFill, BsFillPersonFill } from "react-icons/bs";
 import { HiLocationMarker } from "react-icons/hi";
-import { AiFillPhone } from "react-icons/ai";
+import { AiFillPhone,AiOutlineSearch } from "react-icons/ai";
 import { FaShoppingCart } from "react-icons/fa";
+import pictureData from '../js/pictureData'
+import Shop from '../Shop'
 import '../css/style.css'
 
 
 
 const Menu = () => {
      const location = useLocation();
+    //  const [cartValue, setCartValue] = useState(0)
+     const [searchTerm, setSearchTerm] = useState('');
+     const [test, setTest] = useState(pictureData);
+
+
+  const handleChange = (e) => {
+    
+     e.preventDefault();
+    setSearchTerm(e.target.value);
+
+    
+    let searchResult = pictureData.filter((item)=>{
+      return item.productName.toLowerCase().includes(searchTerm.toLowerCase())
+    })
+    setTest(searchResult)
+  };
+
+
+
+
     if(location.pathname === '/albumcarousel' ){
     return null
   }
   if(location.pathname === '/albumcarousel/big-album' ){
     return null
   }
+
+  const {id } = test[0]
 
   return (
     <nav className='menu-container'>
@@ -38,11 +62,18 @@ const Menu = () => {
             </li>
             |
             <li className='menu-item'>
-                <input type="search" placeholder='Search'/>
+                <form className="d-flex" role="search">
+      <input className="form-control me-2" type="search" style={{height: '30px'}} placeholder="Search..." aria-label="Search" onChange={handleChange}/>
+       <Link to='/product' state={{currId: id}}>
+            <button className="btn btn-outline-warning menu-submit" style={{ padding: '5px', height: '30px', display: 'flex', alignItems: 'center'}} type="submit"><AiOutlineSearch /></button> 
+        </Link>
+    </form>
+                {/* <input type="search" placeholder='Search'/> */}
             </li>
             |
-            <li className='menu-item'>
-                <FaShoppingCart />
+            <li className='menu-item cart'>
+                <FaShoppingCart className='cart-icon'/>
+                <p className='add-cart'>0</p>
             </li>
 
         </ul>

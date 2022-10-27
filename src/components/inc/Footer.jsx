@@ -40,7 +40,7 @@ const Footer = () => {
           <h3 className='album-title'>Album Footer</h3>
           <Album />
         </div>
-        <div className='recent footer-items' data-aos="zoom-in-up">
+        <div className='recent-posts footer-items' data-aos="zoom-in-up">
           <h3>recent posts</h3>
           <ul>  
             {allModels.map((model, idx)=>{
@@ -58,10 +58,10 @@ const Footer = () => {
           </ul>
         </div>
         <div className='categories footer-items' data-aos="zoom-in-up">
-         <ToCategories />
+         <ToCategories background="inherit" color="#cfcdcd" boxShadow='none' fontWeight='normal'/>
         </div>
-        <div className='products footer-items' data-aos="zoom-in-up">
-         <TopRated  />
+        <div className='products footer-items'   data-aos="zoom-in-up">
+         <TopRated background="inherit" color="#cfcdcd" boxShadow='none' fontWeight='normal'/>
         </div>
         </section>
         <section className='footer-bottom'>

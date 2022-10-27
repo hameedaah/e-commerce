@@ -15,20 +15,20 @@ const Pagination = ( {postsPerPage, totalPosts, paginate, currentPage}) => {
 
     {currentPage !== 1 &&
     (<li className="page-item">
-      <a className="page-link" href="# " onClick={()=>paginate(currentPage-1)}>Previous</a>
+      <a className="page-link number" href="# " onClick={()=>paginate(currentPage-1)}>Previous</a>
     </li>)
     }
 
     {pageNumbers.map((number, index) => {
         return(
-        <li key={index} className={currentPage===number ?"page-item active":"page-item"}><a className="page-link" href="# " onClick={()=>paginate(number)} >{number}</a></li>
+        <li key={index} className={currentPage===number ?"page-item active":"page-item"}><a className="page-link number" href="# " onClick={()=>paginate(number)} >{number}</a></li>
         )
     })}
 
 
     {currentPage !== pageNumbers.length &&
-    (<li className="page-item">
-      <a className="page-link" href="# " onClick={()=>paginate(currentPage+1)}>Next</a>
+    (<li className="page-item ">
+      <a className="page-link number" href="# " onClick={()=>paginate(currentPage+1)}>Next</a>
     </li>)
     }
   </ul>

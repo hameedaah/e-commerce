@@ -33,7 +33,7 @@ const Contact = () => {
   <div className="contact-item"  data-aos="fade-left" data-aos-easing="ease-out-cubic" data-aos-duration="500">
     <textarea className="form-control" id="exampleFormControlTextarea1" rows="2" required placeholder="Message"></textarea>
   </div>
-  <button data-aos="fade-right" data-aos-easing="ease-out-cubic" data-aos-duration="500" type="submit" className="contact-item btn btn-primary mb-3">SEND MESSAGE</button>
+  <button data-aos="fade-right" data-aos-easing="ease-out-cubic" data-aos-duration="500" type="submit" className="contact-item btn btn-primary mb-3 submit">SEND MESSAGE</button>
 </form>
 </div>
   )
