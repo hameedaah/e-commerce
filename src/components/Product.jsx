@@ -6,6 +6,7 @@ import TopRated from './TopRated'
 import { useLocation } from 'react-router-dom'
 
 const Product = () => {
+  
   const location = useLocation();
   const { currId } = location.state;
 
@@ -14,7 +15,7 @@ const Product = () => {
   })
 
   
- const { id, productName, category, imageurl, price, description } = result[0]
+ const { productName, category, imageurl, price, description } = result[0]
 
   return (
     <section className='detail-page'>
@@ -25,7 +26,7 @@ const Product = () => {
       </div>     
       <div className="product-box">
         
-        <div className="product-row"><p>{id}</p>
+        <div className="product-row">
           <h2>{productName}</h2>
           <p>{category}</p>
           <span>{price}</span>
@@ -36,10 +37,10 @@ const Product = () => {
 
         <button className="cart"> ADD TO CART</button> 
         
-        <div className="thumb">
+        {/* <div className="thumb">
           <img src={imageurl} alt=""  className='small-img'/>
 
-        </div>
+        </div> */}
 
       </div>
 
