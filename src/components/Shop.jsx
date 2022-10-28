@@ -16,10 +16,9 @@ import { UserContext } from '../context/UserContext'
 
 const Shop = ( {info} ) => {
     const posts = info
-    
     const [currentPage, setCurrentPage] = useState(1)
     const postsPerPage = 9
-const {increase, setIncrease} = useContext(UserContext)
+    const {increase, setIncrease} = useContext(UserContext)
 
     //current posts
     const indexOfLastPost = currentPage * postsPerPage;

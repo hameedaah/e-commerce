@@ -7,7 +7,6 @@ import { FaShoppingCart } from "react-icons/fa";
 import pictureData from '../js/pictureData'
 import { UserContext } from '../../context/UserContext';
 import { useContext } from 'react';
-import Shop from '../Shop'
 import '../css/style.css'
 
 
@@ -69,7 +68,7 @@ const Menu = (props) => {
                 <form className="d-flex" role="search">
       <input className="form-control me-2" type="search" style={{height: '30px'}} placeholder="Search..." aria-label="Search" onChange={handleChange}/>
        <Link to='/product' state={{currId: id}}>
-            <button className="btn btn-outline-warning menu-submit" style={{ padding: '5px', height: '30px', display: 'flex', alignItems: 'center'}} type="submit"><AiOutlineSearch /></button> 
+            <button className="btn btn-outline-warning menu-submit submit" style={{ padding: '5px', height: '30px', display: 'flex', alignItems: 'center'}} type="submit"><AiOutlineSearch /></button> 
         </Link> 
     </form>
                 {/* <input type="search" placeholder='Search'/> */}

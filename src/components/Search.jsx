@@ -35,7 +35,7 @@ const Search = () => {
     <form className="d-flex" role="search">
       <input className="form-control me-2" type="search" placeholder="Search..." aria-label="Search" onChange={handleChange}/>
        <Link to='/product' state={{currId: id}}>
-            <button className="btn btn-outline-warning submit" type="submit">Search</button> 
+            <button className="search-btn submit" type="submit">Search</button> 
         </Link>
     </form>
     </nav>

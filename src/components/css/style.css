@@ -961,3 +961,21 @@ background: #063838;
     font-size: 40px;
 }
 /* End of error page */
+
+
+.search-btn {
+    background: #0a8585;
+    color: white;
+    padding: 0.5rem 0.75rem;
+    font-size: 1rem;
+    text-transform: capitalize;
+    border: transparent;
+    border-radius: 5px;
+}
+
+.search-btn:hover {
+    background: #063838;
+    opacity: 0.8;
+    color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
