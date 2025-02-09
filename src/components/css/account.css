@@ -1,186 +1,182 @@
 * {
-   margin: 0;
-   padding: 0;
-   box-sizing: border-box;
- }
-
-.sign-up-form{
-    height: auto;
-    border: 1px solid gray;
-    border-radius: 5px;
-    background: whitesmoke;
-    color: black;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    padding: 20px;
-    font-size: 16px;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.password-field span{
+.sign-up-form {
+  height: auto;
+  border: 1px solid gray;
+  border-radius: 5px;
+  background: whitesmoke;
+  color: black;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  font-size: 16px;
+}
+
+.password-field span {
   position: absolute;
-    margin-left: -25px;
-      margin-top: 8px;
-      font-size: 1rem;
+  margin-left: -25px;
+  margin-top: 8px;
+  font-size: 1rem;
 }
 
-.sign-up-form .form-row{
+.sign-up-form .form-row {
   display: flex;
   width: 80%;
   flex-wrap: wrap;
   padding: 0;
   margin-bottom: 1.5rem;
   height: 40px;
-  
 }
 
-.form-row .submit{
+.form-row .submit {
   margin-right: 1rem;
   height: 40px;
 }
 
-.submit{
+.submit {
   background: #0a8585;
   color: white;
   border: none;
 }
 
-.submit:hover{
+.submit:hover {
   background: #063838;
   opacity: 0.8;
   color: white;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
-.form-row .remember-me{
-display: flex;
-white-space: nowrap;
-font-size: 16px;
-
+.form-row .remember-me {
+  display: flex;
+  white-space: nowrap;
+  font-size: 16px;
 }
-.remember-me label{
+.remember-me label {
   padding-left: 0.5rem;
   padding-top: 0.5rem;
 }
 
-
-
-.sign-up-form input{
-    width: 100%;
-    border: 2px solid #aaa;
-    height: 30px;
-    margin-bottom: 20px;
-    margin-top: 5px; 
+.sign-up-form input {
+  width: 100%;
+  border: 2px solid #aaa;
+  height: 30px;
+  margin-bottom: 20px;
+  margin-top: 5px;
 }
 
-.sign-up-form a{
-      text-decoration: underline;
-      color: rgb(17, 182, 154)
-  }
+.sign-up-form a {
+  text-decoration: underline;
+  color: rgb(17, 182, 154);
+}
 
-
-.account-title,.account-login, .account-register{
+.account-title,
+.account-login,
+.account-register {
   padding: 1rem 0;
   font-weight: 900;
   font-size: 30px;
   margin-bottom: 2rem;
 }
 
-.account-login, .account-register{
+.account-login,
+.account-register {
   margin-bottom: 1rem;
 }
 
+/* Sidebar Component Beginning */
+.sidebar-container {
+  width: 27vw;
+  margin-top: 5rem;
+  margin-bottom: 3rem;
+}
 
-    /* Sidebar Component Beginning */
-    .sidebar-container {
-      width: 27vw;
-      margin-top: 5rem;
-      margin-bottom: 3rem;
-    }
+@media screen and (max-width: 768px) {
+  .sidebar-container {
+    width: 80vw;
+    margin: 0 auto;
+  }
+}
 
-      @media screen and (max-width: 768px) {
-        .sidebar-container{
-          width: 80vw;
-          margin: 0 auto;
-        }
-        }
+.card {
+  width: 100%;
+  margin: 1.5rem 0;
+  padding: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border: none;
+}
 
-    
+.card .title {
+  font-size: 24px;
+  font-weight: 900;
+  width: 75%;
+  text-transform: capitalize;
+  padding: 20px 0;
+  margin: 0;
+}
 
-    .card{
-      width: 100%;
-        margin: 1.5rem 0;
-        padding: 20px;
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-        border: none;
-    }
+.product-list {
+  width: 75%;
+  padding: 0;
+  margin-bottom: 0;
+}
 
-    .card .title{
-        font-size: 24px;
-        font-weight: 900;
-        width: 75%;
-        text-transform: capitalize;
-        padding: 20px 0;
-        margin: 0;
-    }
+.product-item {
+  display: flex;
+  color: black;
+  justify-content: space-between;
+  margin-bottom: 0.75rem;
+}
 
-    .product-list{
-      width: 75%;
-      padding: 0;
-      margin-bottom: 0;
-    }
+.product-item .product-text p {
+  margin: 0;
+  text-transform: capitalize;
+}
 
-    .product-item{
-      display: flex;
-      color: black;
-      justify-content: space-between;
-      margin-bottom: 0.75rem;
-    }
+.product-item .product-name,
+.card.category-list {
+  font-weight: bold;
+}
 
-   .product-item .product-text p{
-      margin: 0;
-      text-transform: capitalize;
-   }
+.category-list li {
+  list-style-type: none;
+}
+.category-list .category-items {
+  text-decoration: none;
+  color: black;
+}
 
-   .product-item .product-name,.card.category-list{
-    font-weight: bold;
-   }
+.product-item img {
+  width: 30px;
+  height: 30%;
+  object-fit: cover;
+}
 
-   .category-list li{
-      list-style-type: none;
-   }
-   .category-list .category-items{
-    text-decoration: none;
-    color: black;
-   }
+.product-text .price {
+  color: grey;
+}
 
-   .product-item img{
-    width: 30px;
-    height: 30%;
-    object-fit: cover;
-   }
+.card .calender-month {
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  margin-bottom: 0;
+}
 
-   .product-text .price{
-    color: grey;
-   }
+.card .cal-icon,
+.card .folder-icon {
+  margin-right: 7px;
+}
 
-   .card .calender-month {
-      font-weight: bold;
-      display: flex;
-      align-items: center;
-      margin-bottom: 0;
-   }
-
-   .card .cal-icon,.card .folder-icon{
-    margin-right: 7px;
-   }
-
-   .card.category-list li{
-    list-style-type: none;
-    margin-bottom: 0.5rem;
-   }
-
+.card.category-list li {
+  list-style-type: none;
+  margin-bottom: 0.5rem;
+}
 
 /*Shop Sidebar Beginning */
-.price-filter{
+.price-filter {
   height: 130px;
   /* border: 1px solid gray; */
   border-radius: 5px;
@@ -188,13 +184,13 @@ font-size: 16px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
-.filter-and-range{
+.filter-and-range {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.filter-btn{
+.filter-btn {
   padding: 5px 15px;
   background: black;
   border: none;
@@ -203,7 +199,7 @@ font-size: 16px;
   font-weight: bold;
 }
 
-.price-filter .form-label{
+.price-filter .form-label {
   font-size: 20px;
   font-weight: bolder;
 }
@@ -217,12 +213,11 @@ font-size: 16px;
   background-color: #333333;
 }
 
-.filter-container .shop-list{
+.filter-container .shop-list {
   padding: 0;
 }
 
-.filter-container .shop-list li{
+.filter-container .shop-list li {
   list-style-type: none;
-
 }
 /*Shop Sidebar Ending */

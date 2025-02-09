@@ -1,73 +1,69 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.detail-page{
-    width: 90vw;
-    margin: 5rem auto;
-    display: flex;
-    justify-content: space-between;
+.detail-page {
+  width: 90vw;
+  margin: 5rem auto;
+  display: flex;
+  justify-content: space-between;
 }
 
 .detail {
-    width: 64%;
-    display : flex;
-    padding: 30px;
-    border: 1px solid rgb(190, 186, 186);
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    border-radius: 5px
+  width: 64%;
+  display: flex;
+  padding: 30px;
+  border: 1px solid rgb(190, 186, 186);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
 }
 
 @media screen and (max-width: 550px) {
-.detail{
+  .detail {
     display: block;
+  }
 }
-} 
-
 
 @media screen and (max-width: 800px) {
+  .detail-page {
+    display: block;
+  }
 
-    .detail-page {
-        display: block;
-    }
-
-    .detail, .detail-topRated {
-        width: 85vw;
-        margin: 0 auto;
-    }
-
+  .detail,
+  .detail-topRated {
+    width: 85vw;
+    margin: 0 auto;
+  }
 }
-
 
 .big-img {
-    height: 320px;
-    width : 300px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    margin-right: 1rem;
+  height: 320px;
+  width: 300px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin-right: 1rem;
 }
-.product-row{
-    text-transform: capitalize;
+.product-row {
+  text-transform: capitalize;
 }
 .product-btn {
-    background: #0a8585;
-    color: white;
-    padding: 0.25rem 0.5rem;
-    font-size: 1rem;
-    text-transform: capitalize;
-    border: transparent;
-    border-radius: 5px;
+  background: #0a8585;
+  color: white;
+  padding: 0.25rem 0.5rem;
+  font-size: 1rem;
+  text-transform: capitalize;
+  border: transparent;
+  border-radius: 5px;
 }
 
 .product-btn:hover {
-    background: #063838;
-    opacity: 0.8;
-    color: white;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  background: #063838;
+  opacity: 0.8;
+  color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
-
-.product-box{
-    margin: 10px;
+.product-box {
+  margin: 10px;
 }

@@ -1,26 +1,21 @@
-import React from 'react'
-import { useParams } from 'react-router-dom'
-import pictureData from './js/pictureData'
-import Shop from './Shop'
+import React from "react";
+import { useParams } from "react-router-dom";
+import pictureData from "./js/pictureData";
+import Shop from "./Shop";
 
 const Categories = () => {
   const params = useParams();
-  const category = params.categoryName
-  
+  const category = params.categoryName;
 
+  let filteredCategory = pictureData.filter((item) => {
+    return item.category === category;
+  });
 
-     let filteredCategory = pictureData.filter(item=>{
-        return item.category === category 
-    })
-
-    
-    
-    
   return (
     <div>
-        <Shop info={filteredCategory} />
+      <Shop info={filteredCategory} />
     </div>
-  )
-}
+  );
+};
 
-export default Categories
+export default Categories;
